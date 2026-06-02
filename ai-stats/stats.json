@@ -1,0 +1,967 @@
+{
+  "codex_prompts": [
+    {
+      "mtime": "2026-05-31T08:45:06.267435+00:00",
+      "name": "CODEX_BACKTEST_FIDELITY_AND_SAMPLE_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-31T00:29:06.625966+00:00",
+      "name": "CODEX_BACKTEST_HERMES_PIPELINE_PROMPT.md",
+      "target": "aegis-dashboard"
+    },
+    {
+      "mtime": "2026-05-31T00:26:46.429545+00:00",
+      "name": "CODEX_BACKTEST_MERGE_AND_PANEL_PROMPT.md",
+      "target": "aegis-dashboard"
+    },
+    {
+      "mtime": "2026-05-30T15:30:59.987462+00:00",
+      "name": "CODEX_BACKTEST_SERVICE_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-31T01:36:25.307399+00:00",
+      "name": "CODEX_BACKTEST_VERIFY_HARDEN_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-30T18:15:30.248392+00:00",
+      "name": "CODEX_COMMIT_AND_TIDY_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-31T05:26:22.496504+00:00",
+      "name": "CODEX_CONTAINERD_MIGRATE_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-05-30T08:15:38.406704+00:00",
+      "name": "CODEX_DASHBOARD_DISPLAY_PROMPT.md",
+      "target": "aegis-dashboard"
+    },
+    {
+      "mtime": "2026-05-30T14:24:11.577874+00:00",
+      "name": "CODEX_DASHBOARD_EXCHANGES_PROMPT.md",
+      "target": "aegis-dashboard"
+    },
+    {
+      "mtime": "2026-05-30T07:43:17.442568+00:00",
+      "name": "CODEX_DASHBOARD_PIECHART_PROMPT.md",
+      "target": "aegis-dashboard"
+    },
+    {
+      "mtime": "2026-06-01T01:27:12.041294+00:00",
+      "name": "CODEX_DEPLOY_HERMES_SKILL_AND_VERIFY_PROMPT.md",
+      "target": "hermes-agent"
+    },
+    {
+      "mtime": "2026-05-31T04:24:55.162477+00:00",
+      "name": "CODEX_DISK_MIGRATE_AND_GUARDRAILS_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-05-31T05:32:49.313535+00:00",
+      "name": "CODEX_DOCKER_BACK_TO_SSD_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-05-30T01:22:42.368761+00:00",
+      "name": "CODEX_E2E_PHASE_PROMPT.md",
+      "target": "atelier"
+    },
+    {
+      "mtime": "2026-05-31T10:55:30.708374+00:00",
+      "name": "CODEX_EV_GATE_AND_FACTOR_ATTRIBUTION_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-30T14:23:40.081984+00:00",
+      "name": "CODEX_EXCHANGE_BRIDGE_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-31T06:13:46.335061+00:00",
+      "name": "CODEX_GATEWAY_HEALTH_DOCTOR_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-05-31T07:06:40.514891+00:00",
+      "name": "CODEX_GOLDEN_CROSS_2R_BACKTEST_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-30T23:51:16.554809+00:00",
+      "name": "CODEX_HERMES_INTEGRATION_PROMPT.md",
+      "target": "hermes-agent"
+    },
+    {
+      "mtime": "2026-05-30T06:13:33.155741+00:00",
+      "name": "CODEX_IBKR_CONNECT_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-31T05:07:57.302103+00:00",
+      "name": "CODEX_MIGRATION_FINALIZE_AND_COMMIT_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-06-01T13:42:18.670652+00:00",
+      "name": "CODEX_OLYMPUS_1_STRATEGY_COMPETITION_PROMPT.md",
+      "target": "aegis-strategies"
+    },
+    {
+      "mtime": "2026-06-01T13:42:45.298722+00:00",
+      "name": "CODEX_OLYMPUS_2_MODEL_GATEWAY_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-06-01T13:43:11.474791+00:00",
+      "name": "CODEX_OLYMPUS_3_OVERVIEW_REPO_PROMPT.md",
+      "target": "olympus"
+    },
+    {
+      "mtime": "2026-06-02T00:38:17.579345+00:00",
+      "name": "CODEX_OLYMPUS_4_DOCS_AND_FIXES_PROMPT.md",
+      "target": "olympus"
+    },
+    {
+      "mtime": "2026-06-02T00:53:09.803456+00:00",
+      "name": "CODEX_OLYMPUS_5_COMPETITION_TO_HERMES_PROMPT.md",
+      "target": "hermes-agent"
+    },
+    {
+      "mtime": "2026-06-02T01:15:03.026505+00:00",
+      "name": "CODEX_OLYMPUS_6_PAPER_LOOP_E2E_PROMPT.md",
+      "target": "olympus"
+    },
+    {
+      "mtime": "2026-06-02T04:48:09.705190+00:00",
+      "name": "CODEX_OLYMPUS_7_AI_CODING_STATS_PROMPT.md",
+      "target": "olympus"
+    },
+    {
+      "mtime": "2026-05-26T15:10:38.291695+00:00",
+      "name": "CODEX_PHASE10_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-26T16:01:47.688152+00:00",
+      "name": "CODEX_PHASE11_PROMPT.md",
+      "target": "hermes-agent"
+    },
+    {
+      "mtime": "2026-05-27T01:43:00.325309+00:00",
+      "name": "CODEX_PHASE12_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-27T15:54:52.333804+00:00",
+      "name": "CODEX_PHASE13_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-28T01:28:54.896762+00:00",
+      "name": "CODEX_PHASE14_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-28T01:32:01.858169+00:00",
+      "name": "CODEX_PHASE15_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-28T01:35:25.515444+00:00",
+      "name": "CODEX_PHASE16_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-28T03:30:06.870196+00:00",
+      "name": "CODEX_PHASE17_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-28T06:26:12.903353+00:00",
+      "name": "CODEX_PHASE18_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-28T09:33:52.584874+00:00",
+      "name": "CODEX_PHASE19_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-24T15:45:04.633865+00:00",
+      "name": "CODEX_PHASE1_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-28T10:42:07.123908+00:00",
+      "name": "CODEX_PHASE20_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-28T13:51:46.053605+00:00",
+      "name": "CODEX_PHASE21_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-29T01:49:10.119828+00:00",
+      "name": "CODEX_PHASE22_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-05-29T05:42:45.359649+00:00",
+      "name": "CODEX_PHASE23_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-29T14:49:21.172910+00:00",
+      "name": "CODEX_PHASE24_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-30T01:51:09.878566+00:00",
+      "name": "CODEX_PHASE25_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-25T13:06:15.954451+00:00",
+      "name": "CODEX_PHASE2_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-25T13:35:51.416257+00:00",
+      "name": "CODEX_PHASE3_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-25T13:55:06.060559+00:00",
+      "name": "CODEX_PHASE4_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-25T15:25:28.566245+00:00",
+      "name": "CODEX_PHASE5_PROMPT.md",
+      "target": "aegis"
+    },
+    {
+      "mtime": "2026-05-25T15:50:19.389170+00:00",
+      "name": "CODEX_PHASE6_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-26T01:27:59.182484+00:00",
+      "name": "CODEX_PHASE7_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-26T01:51:46.822639+00:00",
+      "name": "CODEX_PHASE8_PROMPT.md",
+      "target": "hermes-agent"
+    },
+    {
+      "mtime": "2026-05-26T14:27:12.109884+00:00",
+      "name": "CODEX_PHASE9_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-05-31T05:55:15.465084+00:00",
+      "name": "CODEX_PII_REMEDIATION_AND_DOCS_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-05-30T06:14:17.307841+00:00",
+      "name": "CODEX_POSITIONS_DASHBOARD_PROMPT.md",
+      "target": "aegis-dashboard"
+    },
+    {
+      "mtime": "2026-05-31T07:48:23.617407+00:00",
+      "name": "CODEX_REGIME_COMPARE_AND_EXIT_REASON_PROMPT.md",
+      "target": "general"
+    },
+    {
+      "mtime": "2026-06-01T04:07:09.226842+00:00",
+      "name": "CODEX_SINGBOX_HY2_DEBUG_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-06-01T02:20:57.014441+00:00",
+      "name": "CODEX_SINGBOX_HYSTERIA2_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-05-31T15:00:46.461957+00:00",
+      "name": "CODEX_STRATEGY_HEALTHCHECK_GATE_PROMPT.md",
+      "target": "aegis-strategies"
+    },
+    {
+      "mtime": "2026-06-01T01:42:27.855059+00:00",
+      "name": "CODEX_TAILSCALE_MOSH_PROMPT.md",
+      "target": "ops"
+    },
+    {
+      "mtime": "2026-05-31T02:20:02.993400+00:00",
+      "name": "CODEX_TIDY_AND_FRONTEND_POLISH_PROMPT.md",
+      "target": "aegis-dashboard"
+    },
+    {
+      "mtime": "2026-05-31T15:23:01.411784+00:00",
+      "name": "CODEX_VALUATION_SCREENER_AND_DIGEST_PROMPT.md",
+      "target": "aegis-dashboard"
+    }
+  ],
+  "generated_at": "2026-06-02T05:12:03.728265+00:00",
+  "language_distribution_public": [
+    {
+      "files": 42,
+      "language": "Python",
+      "loc": 20789
+    },
+    {
+      "files": 23,
+      "language": "Markdown",
+      "loc": 2445
+    },
+    {
+      "files": 16,
+      "language": "Other",
+      "loc": 1342
+    },
+    {
+      "files": 8,
+      "language": "Shell",
+      "loc": 1271
+    },
+    {
+      "files": 12,
+      "language": "YAML",
+      "loc": 717
+    },
+    {
+      "files": 1,
+      "language": "HTML",
+      "loc": 344
+    },
+    {
+      "files": 5,
+      "language": "TOML",
+      "loc": 198
+    },
+    {
+      "files": 9,
+      "language": "Docker",
+      "loc": 74
+    }
+  ],
+  "public_safety_note": "Olympus AI-coding stats. Private repositories expose aggregate counts only; prompt contents, trading data, credentials, actors and private code details are excluded.",
+  "repositories": [
+    {
+      "aggregate": {
+        "active_days": 7,
+        "ai_marked_commits": 7,
+        "commits": 77,
+        "deletions": 730,
+        "first_commit_date": "2026-05-27T00:00:19+09:00",
+        "insertions": 28966,
+        "last_commit_date": "2026-06-02T09:58:12+08:00",
+        "net_lines": 28236,
+        "pr_count": 23,
+        "tracked_files": 68
+      },
+      "ai_marked_samples": [
+        {
+          "sha": "df5e60a33662",
+          "subject": "Merge pull request #20 from StevenG3/codex/strategy-healthcheck-gate"
+        },
+        {
+          "sha": "96056d49b6ec",
+          "subject": "feat: implement StevenG3/atelier#3 — [hermes-aegis] Phase 25 — Operator-gated auto-correction"
+        },
+        {
+          "sha": "453b463caf53",
+          "subject": "feat: implement StevenG3/atelier#1 — [hermes-aegis] Phase 24 — Streaming IBKR account updates"
+        },
+        {
+          "sha": "73ee80befca6",
+          "subject": "ci: add GitHub Actions (ruff + pytest) (#2)"
+        },
+        {
+          "sha": "1ee66eed62e6",
+          "subject": "ci: add GitHub Actions (ruff + pytest)"
+        },
+        {
+          "sha": "b84a638309a1",
+          "subject": "feat: Phase 23 — IBKR portfolio reconciliation (read-only)"
+        },
+        {
+          "sha": "5602716f0ed1",
+          "subject": "baseline: post-Phase-9 snapshot (codex implementation pre-review)"
+        }
+      ],
+      "language_distribution": [
+        {
+          "files": 42,
+          "language": "Python",
+          "loc": 20789
+        },
+        {
+          "files": 7,
+          "language": "Markdown",
+          "loc": 833
+        },
+        {
+          "files": 2,
+          "language": "YAML",
+          "loc": 287
+        },
+        {
+          "files": 5,
+          "language": "TOML",
+          "loc": 198
+        },
+        {
+          "files": 3,
+          "language": "Other",
+          "loc": 152
+        },
+        {
+          "files": 9,
+          "language": "Docker",
+          "loc": 74
+        }
+      ],
+      "name": "StevenG3/aegis",
+      "private": false,
+      "pull_requests": {
+        "count": 23,
+        "items": [
+          {
+            "merged": true,
+            "number": 23,
+            "review_url": "https://github.com/StevenG3/aegis/pull/23/files",
+            "state": "MERGED",
+            "title": "[codex] Calibrate from closed paper outcomes",
+            "url": "https://github.com/StevenG3/aegis/pull/23"
+          },
+          {
+            "merged": true,
+            "number": 22,
+            "review_url": "https://github.com/StevenG3/aegis/pull/22/files",
+            "state": "MERGED",
+            "title": "Wire EV shadow into paper scorecard trades",
+            "url": "https://github.com/StevenG3/aegis/pull/22"
+          },
+          {
+            "merged": true,
+            "number": 21,
+            "review_url": "https://github.com/StevenG3/aegis/pull/21/files",
+            "state": "MERGED",
+            "title": "Add latest competition leaderboard endpoint",
+            "url": "https://github.com/StevenG3/aegis/pull/21"
+          },
+          {
+            "merged": true,
+            "number": 20,
+            "review_url": "https://github.com/StevenG3/aegis/pull/20/files",
+            "state": "MERGED",
+            "title": "Add strategy healthcheck gate",
+            "url": "https://github.com/StevenG3/aegis/pull/20"
+          },
+          {
+            "merged": true,
+            "number": 19,
+            "review_url": "https://github.com/StevenG3/aegis/pull/19/files",
+            "state": "MERGED",
+            "title": "fix: allow initial IBKR reconnect attempt",
+            "url": "https://github.com/StevenG3/aegis/pull/19"
+          },
+          {
+            "merged": true,
+            "number": 18,
+            "review_url": "https://github.com/StevenG3/aegis/pull/18/files",
+            "state": "MERGED",
+            "title": "feat: add EV gate and factor attribution",
+            "url": "https://github.com/StevenG3/aegis/pull/18"
+          },
+          {
+            "merged": true,
+            "number": 17,
+            "review_url": "https://github.com/StevenG3/aegis/pull/17/files",
+            "state": "MERGED",
+            "title": "fix: select requested yfinance ticker columns",
+            "url": "https://github.com/StevenG3/aegis/pull/17"
+          },
+          {
+            "merged": true,
+            "number": 16,
+            "review_url": "https://github.com/StevenG3/aegis/pull/16/files",
+            "state": "MERGED",
+            "title": "fix: allow string strategy parameters",
+            "url": "https://github.com/StevenG3/aegis/pull/16"
+          },
+          {
+            "merged": true,
+            "number": 15,
+            "review_url": "https://github.com/StevenG3/aegis/pull/15/files",
+            "state": "MERGED",
+            "title": "fix: make backtest open-position stats explicit",
+            "url": "https://github.com/StevenG3/aegis/pull/15"
+          },
+          {
+            "merged": true,
+            "number": 14,
+            "review_url": "https://github.com/StevenG3/aegis/pull/14/files",
+            "state": "MERGED",
+            "title": "fix: classify active backtest exits as signal",
+            "url": "https://github.com/StevenG3/aegis/pull/14"
+          },
+          {
+            "merged": true,
+            "number": 13,
+            "review_url": "https://github.com/StevenG3/aegis/pull/13/files",
+            "state": "MERGED",
+            "title": "fix: report entry regime from backtest data",
+            "url": "https://github.com/StevenG3/aegis/pull/13"
+          },
+          {
+            "merged": true,
+            "number": 12,
+            "review_url": "https://github.com/StevenG3/aegis/pull/12/files",
+            "state": "MERGED",
+            "title": "feat: add backtest exit reasons and regime data",
+            "url": "https://github.com/StevenG3/aegis/pull/12"
+          },
+          {
+            "merged": true,
+            "number": 11,
+            "review_url": "https://github.com/StevenG3/aegis/pull/11/files",
+            "state": "MERGED",
+            "title": "feat: add backtest strategy plugin loader",
+            "url": "https://github.com/StevenG3/aegis/pull/11"
+          },
+          {
+            "merged": true,
+            "number": 10,
+            "review_url": "https://github.com/StevenG3/aegis/pull/10/files",
+            "state": "MERGED",
+            "title": "docs: add system overview and redact actor example",
+            "url": "https://github.com/StevenG3/aegis/pull/10"
+          },
+          {
+            "merged": true,
+            "number": 9,
+            "review_url": "https://github.com/StevenG3/aegis/pull/9/files",
+            "state": "MERGED",
+            "title": "ops: add restart policy for resiliency",
+            "url": "https://github.com/StevenG3/aegis/pull/9"
+          },
+          {
+            "merged": true,
+            "number": 8,
+            "review_url": "https://github.com/StevenG3/aegis/pull/8/files",
+            "state": "MERGED",
+            "title": "Fix Bybit balance aggregation",
+            "url": "https://github.com/StevenG3/aegis/pull/8"
+          },
+          {
+            "merged": true,
+            "number": 7,
+            "review_url": "https://github.com/StevenG3/aegis/pull/7/files",
+            "state": "MERGED",
+            "title": "Require confirmation for live orders",
+            "url": "https://github.com/StevenG3/aegis/pull/7"
+          },
+          {
+            "merged": true,
+            "number": 6,
+            "review_url": "https://github.com/StevenG3/aegis/pull/6/files",
+            "state": "MERGED",
+            "title": "Add backtest service",
+            "url": "https://github.com/StevenG3/aegis/pull/6"
+          },
+          {
+            "merged": true,
+            "number": 5,
+            "review_url": "https://github.com/StevenG3/aegis/pull/5/files",
+            "state": "MERGED",
+            "title": "Add exchange bridge balance service",
+            "url": "https://github.com/StevenG3/aegis/pull/5"
+          },
+          {
+            "merged": true,
+            "number": 4,
+            "review_url": "https://github.com/StevenG3/aegis/pull/4/files",
+            "state": "MERGED",
+            "title": "feat: [hermes-aegis] Phase 25 — Operator-gated auto-correction (atelier#3)",
+            "url": "https://github.com/StevenG3/aegis/pull/4"
+          },
+          {
+            "merged": true,
+            "number": 3,
+            "review_url": "https://github.com/StevenG3/aegis/pull/3/files",
+            "state": "MERGED",
+            "title": "feat: [hermes-aegis] Phase 24 — Streaming IBKR account updates (atelier#1)",
+            "url": "https://github.com/StevenG3/aegis/pull/3"
+          },
+          {
+            "merged": true,
+            "number": 2,
+            "review_url": "https://github.com/StevenG3/aegis/pull/2/files",
+            "state": "MERGED",
+            "title": "ci: add GitHub Actions (ruff + pytest)",
+            "url": "https://github.com/StevenG3/aegis/pull/2"
+          },
+          {
+            "merged": true,
+            "number": 1,
+            "review_url": "https://github.com/StevenG3/aegis/pull/1/files",
+            "state": "MERGED",
+            "title": "feat: Phase 23 — IBKR portfolio reconciliation (read-only)",
+            "url": "https://github.com/StevenG3/aegis/pull/1"
+          }
+        ]
+      },
+      "timeline": {
+        "daily": [
+          {
+            "commits": 10,
+            "date": "2026-05-27"
+          },
+          {
+            "commits": 10,
+            "date": "2026-05-28"
+          },
+          {
+            "commits": 3,
+            "date": "2026-05-29"
+          },
+          {
+            "commits": 11,
+            "date": "2026-05-30"
+          },
+          {
+            "commits": 33,
+            "date": "2026-05-31"
+          },
+          {
+            "commits": 4,
+            "date": "2026-06-01"
+          },
+          {
+            "commits": 6,
+            "date": "2026-06-02"
+          }
+        ],
+        "weekly": [
+          {
+            "commits": 67,
+            "week": "2026-W22"
+          },
+          {
+            "commits": 10,
+            "week": "2026-W23"
+          }
+        ]
+      },
+      "visibility": "public"
+    },
+    {
+      "aggregate": {
+        "active_days": 10,
+        "ai_marked_commits": 82,
+        "commits": 119,
+        "deletions": 1793,
+        "insertions": 16615,
+        "net_lines": 14822,
+        "pr_count": 4,
+        "tracked_files": 181
+      },
+      "name": "StevenG3/hermes-agent",
+      "private": true,
+      "private_note": "private repository: aggregate statistics only",
+      "visibility": "private"
+    },
+    {
+      "aggregate": {
+        "active_days": 3,
+        "ai_marked_commits": 0,
+        "commits": 10,
+        "deletions": 182,
+        "insertions": 1439,
+        "net_lines": 1257,
+        "pr_count": 0,
+        "tracked_files": 6
+      },
+      "name": "StevenG3/aegis-dashboard",
+      "private": true,
+      "private_note": "private repository: aggregate statistics only",
+      "visibility": "private"
+    },
+    {
+      "aggregate": {
+        "active_days": 3,
+        "ai_marked_commits": 21,
+        "commits": 28,
+        "deletions": 247,
+        "first_commit_date": "2026-05-29T16:54:06+09:00",
+        "insertions": 39545,
+        "last_commit_date": "2026-05-31T07:45:51+09:00",
+        "net_lines": 39298,
+        "pr_count": 1,
+        "tracked_files": 44
+      },
+      "ai_marked_samples": [
+        {
+          "sha": "291dbd0e06e4",
+          "subject": "fix: bound claude planning calls"
+        },
+        {
+          "sha": "ba9ee95823c1",
+          "subject": "feat: harden atelier autonomy loop (#2)"
+        },
+        {
+          "sha": "2babf6d26c52",
+          "subject": "feat: 自主闭环加固(codex 实现 + 人工验证修测试 mock)"
+        },
+        {
+          "sha": "d79ba81721a8",
+          "subject": "WIP on main: 9369fd8 feat: 事件驱动拉起 codex — self-hosted runner workflow"
+        },
+        {
+          "sha": "eb50ab32d855",
+          "subject": "index on main: 9369fd8 feat: 事件驱动拉起 codex — self-hosted runner workflow"
+        },
+        {
+          "sha": "ded5382bd39b",
+          "subject": "untracked files on main: 9369fd8 feat: 事件驱动拉起 codex — self-hosted runner workflow"
+        },
+        {
+          "sha": "9369fd81ca13",
+          "subject": "feat: 事件驱动拉起 codex — self-hosted runner workflow"
+        },
+        {
+          "sha": "4c7ac23da9d2",
+          "subject": "fix: 适配 gh 2.4.0 — 标签操作改 REST,ci_state 改文本解析"
+        },
+        {
+          "sha": "7b7e21c4c63c",
+          "subject": "feat: orchestrator CI 自修复回路 — codex 自主修 GitHub CI fail"
+        },
+        {
+          "sha": "3b88f0627a1d",
+          "subject": "feat: 自主开发循环 — Claude 全权评审/合并/规划,人类仅设目标+可叫停"
+        },
+        {
+          "sha": "b61fb87a1fc7",
+          "subject": "feat: codex-runner 增加 Claude headless 评审,闭环到底"
+        },
+        {
+          "sha": "55e5c02e763c",
+          "subject": "feat: codex-runner 自动触发器 — codex:go → codex exec 实现 → PR"
+        },
+        {
+          "sha": "3d3a0fdd2345",
+          "subject": "feat: 接入 Hermes × TradingAgents × Aegis 交易系统"
+        },
+        {
+          "sha": "2c4892d7104f",
+          "subject": "docs: 双语 README — 英文主版 + 中文可切换"
+        },
+        {
+          "sha": "d52d0654d18f",
+          "subject": "fix: 修复 dashboard 404 — 添加 .nojekyll + README 配置说明"
+        },
+        {
+          "sha": "511c527d9e7d",
+          "subject": "fix: CI 用 apt-get 安装 bats 避免 npm 全局权限错误"
+        },
+        {
+          "sha": "62db2555e858",
+          "subject": "test: bats 单元测试套件 + preflight GH_CMD 可注入"
+        },
+        {
+          "sha": "03a86bbe0d46",
+          "subject": "feat: 启动前依赖检查（preflight）"
+        },
+        {
+          "sha": "ef6a6acb93b7",
+          "subject": "feat: 手机看板 + 全自动 Claude 定时任务支持"
+        },
+        {
+          "sha": "a21636cb0437",
+          "subject": "feat: 用户侧易用性提升 — atelier CLI + 触发短语"
+        }
+      ],
+      "language_distribution": [
+        {
+          "files": 8,
+          "language": "Shell",
+          "loc": 1271
+        },
+        {
+          "files": 13,
+          "language": "Other",
+          "loc": 1190
+        },
+        {
+          "files": 12,
+          "language": "Markdown",
+          "loc": 826
+        },
+        {
+          "files": 10,
+          "language": "YAML",
+          "loc": 430
+        },
+        {
+          "files": 1,
+          "language": "HTML",
+          "loc": 344
+        }
+      ],
+      "name": "StevenG3/atelier",
+      "private": false,
+      "pull_requests": {
+        "count": 1,
+        "items": [
+          {
+            "merged": true,
+            "number": 2,
+            "review_url": "https://github.com/StevenG3/atelier/pull/2/files",
+            "state": "MERGED",
+            "title": "feat: harden atelier autonomy loop",
+            "url": "https://github.com/StevenG3/atelier/pull/2"
+          }
+        ]
+      },
+      "timeline": {
+        "daily": [
+          {
+            "commits": 10,
+            "date": "2026-05-29"
+          },
+          {
+            "commits": 17,
+            "date": "2026-05-30"
+          },
+          {
+            "commits": 1,
+            "date": "2026-05-31"
+          }
+        ],
+        "weekly": [
+          {
+            "commits": 28,
+            "week": "2026-W22"
+          }
+        ]
+      },
+      "visibility": "public"
+    },
+    {
+      "aggregate": {
+        "active_days": 1,
+        "ai_marked_commits": 0,
+        "commits": 3,
+        "deletions": 13,
+        "insertions": 468,
+        "net_lines": 455,
+        "pr_count": 0,
+        "tracked_files": 7
+      },
+      "name": "StevenG3/ops",
+      "private": true,
+      "private_note": "private repository: aggregate statistics only",
+      "visibility": "private"
+    },
+    {
+      "aggregate": {
+        "active_days": 1,
+        "ai_marked_commits": 0,
+        "commits": 1,
+        "deletions": 0,
+        "insertions": 30,
+        "net_lines": 30,
+        "pr_count": 0,
+        "tracked_files": 4
+      },
+      "name": "StevenG3/aegis-strategies",
+      "private": true,
+      "private_note": "private repository: aggregate statistics only",
+      "visibility": "private"
+    },
+    {
+      "aggregate": {
+        "active_days": 2,
+        "ai_marked_commits": 0,
+        "commits": 3,
+        "deletions": 0,
+        "first_commit_date": "2026-06-01T23:52:47+09:00",
+        "insertions": 786,
+        "last_commit_date": "2026-06-02T10:00:48+09:00",
+        "net_lines": 786,
+        "pr_count": 0,
+        "tracked_files": 4
+      },
+      "ai_marked_samples": [],
+      "language_distribution": [
+        {
+          "files": 4,
+          "language": "Markdown",
+          "loc": 786
+        }
+      ],
+      "name": "StevenG3/Olympus",
+      "private": false,
+      "pull_requests": {
+        "count": 0,
+        "items": []
+      },
+      "timeline": {
+        "daily": [
+          {
+            "commits": 1,
+            "date": "2026-06-01"
+          },
+          {
+            "commits": 2,
+            "date": "2026-06-02"
+          }
+        ],
+        "weekly": [
+          {
+            "commits": 3,
+            "week": "2026-W23"
+          }
+        ]
+      },
+      "visibility": "public"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "active_days_public_timeline": 7,
+    "ai_marked_commits": 110,
+    "codex_prompt_tasks": 62,
+    "net_lines": 84884,
+    "private_repositories": 4,
+    "public_repositories": 3,
+    "repositories": 7,
+    "total_commits": 241,
+    "total_deletions": 2965,
+    "total_insertions": 87849
+  },
+  "timeline": {
+    "weekly_public": [
+      {
+        "commits": 95,
+        "week": "2026-W22"
+      },
+      {
+        "commits": 13,
+        "week": "2026-W23"
+      }
+    ]
+  }
+}

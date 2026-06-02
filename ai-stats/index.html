@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Olympus AI Coding Stats</title>
+    <script src="./vendor/chart.umd.min.js"></script>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0f14;
+        --panel: #111821;
+        --panel-2: #151f2a;
+        --line: #263341;
+        --text: #e7eef7;
+        --muted: #8da0b4;
+        --accent: #5eead4;
+        --accent-2: #93c5fd;
+        --warn: #fbbf24;
+        --good: #86efac;
+        --bad: #fca5a5;
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 14px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        letter-spacing: 0;
+      }
+
+      a {
+        color: var(--accent-2);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .shell {
+        width: min(1240px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 28px 0 48px;
+      }
+
+      header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+        padding-bottom: 22px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(24px, 4vw, 42px);
+        line-height: 1.05;
+        font-weight: 720;
+      }
+
+      .subtitle {
+        max-width: 780px;
+        color: var(--muted);
+        margin-top: 10px;
+      }
+
+      .stamp {
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .summary {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        margin: 22px 0;
+      }
+
+      .card,
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+      }
+
+      .card {
+        padding: 16px;
+        min-height: 104px;
+      }
+
+      .label {
+        color: var(--muted);
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .value {
+        margin-top: 8px;
+        font-size: 28px;
+        font-weight: 760;
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .hint {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .layout {
+        grid-template-columns: 1.35fr 0.9fr;
+        align-items: start;
+      }
+
+      .panel {
+        padding: 18px;
+      }
+
+      .panel h2 {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+
+      .chart-box {
+        height: 300px;
+      }
+
+      .chart-box.small {
+        height: 260px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 10px 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 620;
+        text-transform: uppercase;
+      }
+
+      td.numeric {
+        font-variant-numeric: tabular-nums;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .repo-name {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 650;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        height: 22px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0 8px;
+        color: var(--muted);
+        background: var(--panel-2);
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .badge.public {
+        color: var(--good);
+      }
+
+      .badge.private {
+        color: var(--warn);
+      }
+
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 14px;
+      }
+
+      .task-table {
+        max-height: 460px;
+        overflow: auto;
+      }
+
+      .task-table td,
+      .task-table th {
+        white-space: nowrap;
+      }
+
+      .task-table td:first-child {
+        white-space: normal;
+      }
+
+      .footer-note {
+        color: var(--muted);
+        margin-top: 18px;
+        font-size: 12px;
+      }
+
+      .error {
+        border-color: var(--bad);
+        color: var(--bad);
+      }
+
+      @media (max-width: 980px) {
+        header {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .summary,
+        .layout,
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .shell {
+          width: min(100vw - 20px, 1240px);
+          padding-top: 18px;
+        }
+
+        .card,
+        .panel {
+          padding: 14px;
+        }
+
+        .value {
+          font-size: 24px;
+        }
+
+        table {
+          font-size: 13px;
+        }
+
+        th,
+        td {
+          padding: 8px 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <div>
+          <h1>Olympus AI-coding stats</h1>
+          <p class="subtitle">
+            Claude 设计 × Codex 实现。Private 仓仅展示聚合数字,不含提示词正文、交易数据、凭证、actor、IP 或 private 代码细节。
+          </p>
+        </div>
+        <div class="stamp" id="generatedAt">Loading stats...</div>
+      </header>
+
+      <section class="grid summary" id="summary"></section>
+
+      <section class="grid layout">
+        <div class="panel">
+          <h2>AI Coding Activity</h2>
+          <div class="chart-box"><canvas id="timelineChart"></canvas></div>
+        </div>
+        <div class="panel">
+          <h2>Language Distribution</h2>
+          <div class="chart-box small"><canvas id="languageChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="grid two-col">
+        <div class="panel">
+          <h2>Repositories</h2>
+          <div class="chart-box small"><canvas id="repoChart"></canvas></div>
+        </div>
+        <div class="panel">
+          <h2>Public PR Review Links</h2>
+          <div id="prList"></div>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top: 14px">
+        <h2>Repository Table</h2>
+        <div id="repoTable"></div>
+      </section>
+
+      <section class="panel" style="margin-top: 14px">
+        <h2>Claude-designed AI Tasks</h2>
+        <div class="task-table" id="taskTable"></div>
+      </section>
+
+      <p class="footer-note" id="safetyNote"></p>
+    </main>
+
+    <script>
+      const fmt = new Intl.NumberFormat("en-US");
+      const dateFmt = new Intl.DateTimeFormat("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
+      const palette = ["#5eead4", "#93c5fd", "#fbbf24", "#c4b5fd", "#86efac", "#fca5a5", "#f9a8d4"];
+
+      function n(value) {
+        return fmt.format(Number(value || 0));
+      }
+
+      function esc(value) {
+        return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#039;",
+        })[ch]);
+      }
+
+      function makeCard(label, value, hint = "") {
+        return `<article class="card"><div class="label">${esc(label)}</div><div class="value">${esc(value)}</div><div class="hint">${esc(hint)}</div></article>`;
+      }
+
+      function renderSummary(summary) {
+        document.getElementById("summary").innerHTML = [
+          makeCard("Total commits", n(summary.total_commits), "all configured repos"),
+          makeCard("AI-marked commits", n(summary.ai_marked_commits), "Codex/Claude marker subset"),
+          makeCard("Net lines", n(summary.net_lines), `${n(summary.total_insertions)} inserted / ${n(summary.total_deletions)} deleted`),
+          makeCard("Repositories", n(summary.repositories), `${n(summary.public_repositories)} public / ${n(summary.private_repositories)} private`),
+          makeCard("Active days", n(summary.active_days_public_timeline), "public timeline days"),
+          makeCard("AI tasks", n(summary.codex_prompt_tasks), "CODEX_*.md intent files"),
+        ].join("");
+      }
+
+      function renderRepoTable(repos) {
+        const rows = repos.map((repo) => {
+          const a = repo.aggregate || {};
+          const badge = repo.private ? "private(聚合)" : "public";
+          return `<tr>
+            <td><div class="repo-name">${esc(repo.name)} <span class="badge ${repo.private ? "private" : "public"}">${badge}</span></div></td>
+            <td class="numeric">${n(a.commits)}</td>
+            <td class="numeric">${n(a.ai_marked_commits)}</td>
+            <td class="numeric">${n(a.net_lines)}</td>
+            <td class="numeric">${n(a.active_days)}</td>
+            <td class="numeric">${a.pr_count === null || a.pr_count === undefined ? "n/a" : n(a.pr_count)}</td>
+          </tr>`;
+        });
+        document.getElementById("repoTable").innerHTML = `<table>
+          <thead><tr><th>Repository</th><th>Commits</th><th>AI-marked</th><th>Net lines</th><th>Active days</th><th>PRs</th></tr></thead>
+          <tbody>${rows.join("")}</tbody>
+        </table>`;
+      }
+
+      function renderTasks(tasks) {
+        const rows = tasks.slice().reverse().map((task) => {
+          const date = task.mtime ? dateFmt.format(new Date(task.mtime)) : "";
+          return `<tr><td>${esc(task.name)}</td><td>${esc(task.target)}</td><td>${esc(date)}</td></tr>`;
+        });
+        document.getElementById("taskTable").innerHTML = `<table>
+          <thead><tr><th>Prompt file</th><th>Target</th><th>Modified</th></tr></thead>
+          <tbody>${rows.join("")}</tbody>
+        </table>`;
+      }
+
+      function renderPrs(repos) {
+        const publicRepos = repos.filter((repo) => !repo.private);
+        const rows = [];
+        for (const repo of publicRepos) {
+          for (const pr of (repo.pull_requests && repo.pull_requests.items || []).slice(0, 12)) {
+            rows.push(`<tr>
+              <td>${esc(repo.name.split("/")[1])}</td>
+              <td><a href="${esc(pr.review_url || pr.url)}">${esc("#" + pr.number + " " + pr.title)}</a></td>
+              <td><span class="badge ${pr.merged ? "public" : ""}">${esc(pr.merged ? "merged" : pr.state)}</span></td>
+            </tr>`);
+          }
+        }
+        const privateCounts = repos
+          .filter((repo) => repo.private)
+          .map((repo) => `${repo.name.split("/")[1]}: ${repo.aggregate && repo.aggregate.pr_count !== null ? n(repo.aggregate.pr_count) : "n/a"}`)
+          .join(" · ");
+        document.getElementById("prList").innerHTML = `<table>
+          <thead><tr><th>Repo</th><th>Review link</th><th>State</th></tr></thead>
+          <tbody>${rows.join("")}</tbody>
+        </table><p class="footer-note">Private PR counts only: ${esc(privateCounts)}</p>`;
+      }
+
+      function chartDefaults() {
+        Chart.defaults.color = "#8da0b4";
+        Chart.defaults.borderColor = "#263341";
+        Chart.defaults.font.family = 'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+      }
+
+      function renderCharts(stats) {
+        chartDefaults();
+        const weekly = stats.timeline.weekly_public || [];
+        new Chart(document.getElementById("timelineChart"), {
+          type: "bar",
+          data: {
+            labels: weekly.map((item) => item.week),
+            datasets: [{
+              label: "Public commits",
+              data: weekly.map((item) => item.commits),
+              borderColor: "#5eead4",
+              backgroundColor: "rgba(94, 234, 212, 0.38)",
+              borderWidth: 1,
+            }],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: { x: { grid: { display: false } }, y: { beginAtZero: true } },
+          },
+        });
+
+        const languages = (stats.language_distribution_public || []).slice(0, 8);
+        new Chart(document.getElementById("languageChart"), {
+          type: "doughnut",
+          data: {
+            labels: languages.map((item) => item.language),
+            datasets: [{ data: languages.map((item) => item.loc), backgroundColor: palette }],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: "bottom" } },
+          },
+        });
+
+        const repos = stats.repositories || [];
+        new Chart(document.getElementById("repoChart"), {
+          type: "bar",
+          data: {
+            labels: repos.map((repo) => repo.name.split("/")[1]),
+            datasets: [
+              {
+                label: "Commits",
+                data: repos.map((repo) => repo.aggregate.commits),
+                backgroundColor: "rgba(147, 197, 253, 0.58)",
+              },
+              {
+                label: "AI-marked",
+                data: repos.map((repo) => repo.aggregate.ai_marked_commits),
+                backgroundColor: "rgba(94, 234, 212, 0.58)",
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: { x: { grid: { display: false } }, y: { beginAtZero: true } },
+          },
+        });
+      }
+
+      async function main() {
+        try {
+          const response = await fetch("./stats.json", { cache: "no-store" });
+          if (!response.ok) throw new Error(`stats.json ${response.status}`);
+          const stats = await response.json();
+          document.getElementById("generatedAt").textContent = `Generated ${dateFmt.format(new Date(stats.generated_at))}`;
+          renderSummary(stats.summary);
+          renderCharts(stats);
+          renderRepoTable(stats.repositories || []);
+          renderPrs(stats.repositories || []);
+          renderTasks(stats.codex_prompts || []);
+          document.getElementById("safetyNote").textContent = stats.public_safety_note || "";
+        } catch (error) {
+          document.getElementById("summary").innerHTML = `<article class="card error">Failed to load stats: ${esc(error.message)}</article>`;
+        }
+      }
+
+      main();
+    </script>
+  </body>
+</html>
