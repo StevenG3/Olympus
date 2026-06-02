@@ -210,9 +210,22 @@
         margin-top: 14px;
       }
 
+      .table-scroll {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+
+      .table-scroll table {
+        min-width: 560px;
+      }
+
       .task-table {
         max-height: 460px;
         overflow: auto;
+      }
+
+      .task-table table {
+        min-width: 680px;
       }
 
       .task-table td,
@@ -377,10 +390,10 @@
             <td class="numeric">${a.pr_count === null || a.pr_count === undefined ? "n/a" : n(a.pr_count)}</td>
           </tr>`;
         });
-        document.getElementById("repoTable").innerHTML = `<table>
+        document.getElementById("repoTable").innerHTML = `<div class="table-scroll"><table>
           <thead><tr><th>Repository</th><th>Commits</th><th>AI-marked</th><th>Net lines</th><th>Active days</th><th>PRs</th></tr></thead>
           <tbody>${rows.join("")}</tbody>
-        </table>`;
+        </table></div>`;
       }
 
       function renderTasks(tasks) {

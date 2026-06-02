@@ -73,6 +73,7 @@ Do not copy private repository contents into public repositories.
 - Operations-side proxy details stay private. Reality over TCP is the primary remote-administration lane; Hysteria2 over UDP may be treated as an optional fallback only when explicitly requested.
 
 ## 8. Known gotchas
+- Before merging frontend changes to dashboard, ai-stats, atelier, Hermes web, or related UIs, run the private unified layout patrol in `/home/gggqqy/ops/frontend_layout_check` and keep 375/390/768/1280 green for horizontal overflow, element bounds, wide-table scrolling, and chart canvas containment.
 
 - Some GitHub CLI versions do not expose visibility in the same command shape; use `gh api` and inspect `.private` when needed.
 - Hermes skill deployment may require copying files into the container, deleting the skills prompt snapshot, and restarting Hermes as UID 10000.
