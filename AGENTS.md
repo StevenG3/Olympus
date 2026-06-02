@@ -38,6 +38,8 @@ All ports below are expected to bind locally.
 | Broker bridge | 18086 | Aegis | Broker connectivity |
 | Exchange bridge | 18087 | Aegis | Exchange readiness and read-only balance surfaces |
 | Backtest service | 18088 | Aegis | Strategy backtests, healthchecks, competition scoring |
+| Strategy competition | 18088 `/strategy-competition` | Aegis backtest-service | Candidate ranking and promote/hold/retire recommendations |
+| Unified LLM model gateway | 18085 via analysis-adapter | Aegis analysis-adapter | Provider chain fallback, token accounting, and cost logging for analysis calls |
 | TradingAgents bridge | 18181 | TradingAgents + Aegis integration | Analysis brain API |
 | Hermes | 8644 | Hermes | Gateway webhook/API surface |
 | Dashboard | 8910 | private dashboard | Local read-only UI |
@@ -88,6 +90,9 @@ Optional:
 - Telegram bot token
 - allowed Telegram users, using placeholders such as `<YOUR_TG_ID>` in docs
 - broker or exchange credentials for explicitly requested live operation
+- model gateway routing, for example `LLM_PROVIDER_CHAIN=<PROVIDER_A>,<PROVIDER_B>,<PROVIDER_C>`
+- model cost hints such as `<PROVIDER>_<MODEL>_INPUT_COST_PER_1K_USD` and `<PROVIDER>_<MODEL>_OUTPUT_COST_PER_1K_USD`
+- strategy competition settings such as promote count, score weights, minimum sample size, and bottom-streak retire threshold
 
 Safe defaults:
 
@@ -98,6 +103,29 @@ Safe defaults:
 - confirmation threshold configured conservatively
 
 STOP if no LLM credential is configured for analysis. Do not print credential values in logs.
+
+Model gateway config reference:
+
+```bash
+LLM_PROVIDER_CHAIN=<PROVIDER_A>,<PROVIDER_B>,<PROVIDER_C>
+LLM_TIMEOUT_SECONDS=30
+LLM_MAX_RETRIES=1
+OPENAI_INPUT_COST_PER_1K_USD=<PLACEHOLDER>
+OPENAI_OUTPUT_COST_PER_1K_USD=<PLACEHOLDER>
+ANTHROPIC_INPUT_COST_PER_1K_USD=<PLACEHOLDER>
+ANTHROPIC_OUTPUT_COST_PER_1K_USD=<PLACEHOLDER>
+```
+
+Competition config reference:
+
+```bash
+COMPETITION_PROMOTE_TOP_N=1
+COMPETITION_MIN_SAMPLE_SIZE=<PLACEHOLDER>
+COMPETITION_BOTTOM_STREAK_RETIRE_THRESHOLD=3
+COMPETITION_SCORE_WEIGHTS=<PLACEHOLDER_JSON>
+```
+
+Use repository examples or service defaults for exact variable names when they differ. Keep real values in ignored env files only.
 
 ## 5. Clone
 
@@ -191,6 +219,54 @@ curl -s http://127.0.0.1:18087/readyz
 curl -s http://127.0.0.1:8910/ >/dev/null
 ```
 
+Strategy competition endpoint smoke:
+
+```bash
+curl -s http://127.0.0.1:18088/strategy-competition \
+  -H 'content-type: application/json' \
+  -d '{
+    "entries": [
+      {
+        "strategy": "candidate_a",
+        "params": {"fast": 20, "slow": 50},
+        "healthcheck": {"verdict": "PASS"},
+        "key_metrics": {
+          "median_return": 6,
+          "beat_bh_share": 0.7,
+          "sharpe": 1,
+          "max_dd": 10,
+          "exit_breakdown": {"signal": 3}
+        },
+        "history": {"bottom_streak": 0}
+      },
+      {
+        "strategy": "blocked_candidate",
+        "params": {"fast": 10, "slow": 30},
+        "healthcheck": {"verdict": "BLOCK"},
+        "key_metrics": {
+          "median_return": 30,
+          "beat_bh_share": 1,
+          "sharpe": 4,
+          "max_dd": 5,
+          "exit_breakdown": {"signal": 3}
+        },
+        "history": {"bottom_streak": 0}
+      }
+    ],
+    "promote_top_n": 1
+  }'
+```
+
+PASS means the response ranks the passing candidate first, marks only advisory statuses such as `promote_candidate`, `hold`, or `retire_candidate`, and never triggers execution.
+
+Model gateway fallback smoke:
+
+```bash
+curl -s http://127.0.0.1:18085/healthz
+# Then run an analysis request with the first provider intentionally disabled in local ignored config.
+# PASS means the response succeeds through the next provider and logs provider, model, latency, token estimate, and estimated cost without printing secrets.
+```
+
 Hermes smoke tests, when Telegram or CLI mode is configured:
 
 ```bash
@@ -234,6 +310,8 @@ Required behavior:
 - Calls record provider, model, latency, token counts, estimated cost, task hint, and success/failure.
 - Logs redact credential-like values and provider raw errors when needed.
 - The gateway never calls broker, exchange order, withdrawal, or risk bypass APIs.
+- `LLM_PROVIDER_CHAIN` controls provider order; unset values should fall back to safe service defaults.
+- `*_COST_PER_1K_USD` values are telemetry hints. Missing cost hints must not block analysis.
 
 Compatibility:
 

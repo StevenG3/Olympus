@@ -102,6 +102,42 @@ See [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) for the expanded service map.
 - **Private strategy repository / 策略私有仓**: strategy implementations, competition outputs, and incubation notes remain in private storage.
 - **Self-hosted ops proxy / 自托管运维代理**: Reality and Hysteria2 are maintained on the operations side for resilient remote administration. This overview only documents the existence of that operations lane, not endpoints or credentials.
 
+## How to Use / 如何使用
+
+Olympus is operated through Hermes whenever possible. A human asks in natural language, Hermes routes the request to the right Aegis skill, and Aegis returns read-only analysis, paper-trading simulation, or a gated execution proposal.
+
+日常尽量通过 Hermes 自然语言使用 Olympus。人类提出问题,Hermes 路由到对应的 Aegis skill,Aegis 返回只读分析、纸面模拟或经过门禁的执行提案。
+
+Typical daily requests:
+
+- Market analysis: "analyze BTC", "summarize TSLA today", "compare QQQ and VOO".
+- Positions and PnL: "show my positions", "explain today's PnL", "what changed since yesterday".
+- Reconciliation: "reconcile broker and dashboard balances", "check exchange totals".
+- Exchange balances: "show Binance balances", "show OKX by coin", "hide assets below 10 USD".
+- Backtests: "backtest BTCUSDT golden cross", "compare strategy exits", "write the result to disk for review".
+- Valuation screen: "screen undervalued symbols", "rank candidates by factor score".
+- Daily digest: "generate daily-digest", "prepare today's market and portfolio report".
+- Gateway doctor: "run doctor", "check IBKR, exchange, TradingAgents, and model gateway connectivity".
+- Factor scoreboard: "show factor-scoreboard", "explain return attribution".
+- Strategy competition ranking: "rank strategy candidates", "show the competition leaderboard".
+
+策略开发流程是 candidates-only:
+
+1. Incubating: private strategy ideas start in ignored or private strategy storage.
+2. Backtest: Aegis runs common-period backtests with saved metadata and outputs.
+3. Healthcheck: candidates must pass the seven-gate healthcheck; hard BLOCK gates stay hard.
+4. Competition ranking: the backtest service ranks candidates on common samples and blocked healthchecks fall to the bottom.
+5. Human graduation: a human reviews the evidence before moving a candidate into the private strategies repository.
+6. EV gate: live consideration requires positive expected value after costs, existing risk checks, explicit live enablement, and per-order confirmation.
+
+The competition winner is only a `promote_candidate`. It is not automatically graduated, not automatically enabled for live trading, and never bypasses risk or confirmation gates.
+
+For deployment, migration, service validation, and remote access, use [AGENTS.md](./AGENTS.md). Remote UI/API access should be tunneled, for example:
+
+```bash
+ssh -L 8910:127.0.0.1:8910 <user>@<SERVER_IP>
+```
+
 ## Safety Model / 安全模型
 
 - **Paper by default / 默认纸面**: no real orders unless live mode is explicitly enabled.
