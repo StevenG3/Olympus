@@ -76,6 +76,7 @@ Do not copy private repository contents into public repositories.
 
 - Some GitHub CLI versions do not expose visibility in the same command shape; use `gh api` and inspect `.private` when needed.
 - Hermes skill deployment may require copying files into the container, deleting the skills prompt snapshot, and restarting Hermes as UID 10000.
+- Aegis tests should run through the repo Makefile, such as `make test` or `make verify`, which installs dependencies inside the Docker test container. Do not treat bare host `pytest` ImportError as the canonical result; the host may lack FastAPI or other service dependencies.
 - `df` and `du` answer different questions. Use `sudo du -x` for filesystem-contained usage audits when permissions hide directories.
 - Docker service DNS is different from host localhost. Inside a container, `127.0.0.1` points to that container, not the host.
 - Competition depends on healthcheck semantics. Blocked candidates must rank below passing candidates even when raw returns look better.
