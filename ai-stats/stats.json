@@ -311,7 +311,7 @@
       "target": "aegis-dashboard"
     }
   ],
-  "generated_at": "2026-06-02T05:12:03.728265+00:00",
+  "generated_at": "2026-06-02T05:15:46.898564+00:00",
   "language_distribution_public": [
     {
       "files": 42,
@@ -334,14 +334,19 @@
       "loc": 1271
     },
     {
+      "files": 1,
+      "language": "JSON",
+      "loc": 967
+    },
+    {
+      "files": 2,
+      "language": "HTML",
+      "loc": 852
+    },
+    {
       "files": 12,
       "language": "YAML",
       "loc": 717
-    },
-    {
-      "files": 1,
-      "language": "HTML",
-      "loc": 344
     },
     {
       "files": 5,
@@ -352,6 +357,11 @@
       "files": 9,
       "language": "Docker",
       "loc": 74
+    },
+    {
+      "files": 1,
+      "language": "JavaScript",
+      "loc": 14
     }
   ],
   "public_safety_note": "Olympus AI-coding stats. Private repositories expose aggregate counts only; prompt contents, trading data, credentials, actors and private code details are excluded.",
@@ -861,14 +871,14 @@
     },
     {
       "aggregate": {
-        "active_days": 1,
+        "active_days": 2,
         "ai_marked_commits": 0,
-        "commits": 3,
+        "commits": 4,
         "deletions": 13,
-        "insertions": 468,
-        "net_lines": 455,
+        "insertions": 919,
+        "net_lines": 906,
         "pr_count": 0,
-        "tracked_files": 7
+        "tracked_files": 9
       },
       "name": "StevenG3/ops",
       "private": true,
@@ -895,21 +905,36 @@
       "aggregate": {
         "active_days": 2,
         "ai_marked_commits": 0,
-        "commits": 3,
+        "commits": 4,
         "deletions": 0,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 786,
-        "last_commit_date": "2026-06-02T10:00:48+09:00",
-        "net_lines": 786,
+        "insertions": 2275,
+        "last_commit_date": "2026-06-02T14:14:19+09:00",
+        "net_lines": 2275,
         "pr_count": 0,
-        "tracked_files": 4
+        "tracked_files": 7
       },
       "ai_marked_samples": [],
       "language_distribution": [
         {
+          "files": 1,
+          "language": "JSON",
+          "loc": 967
+        },
+        {
           "files": 4,
           "language": "Markdown",
           "loc": 786
+        },
+        {
+          "files": 1,
+          "language": "HTML",
+          "loc": 508
+        },
+        {
+          "files": 1,
+          "language": "JavaScript",
+          "loc": 14
         }
       ],
       "name": "StevenG3/Olympus",
@@ -925,13 +950,13 @@
             "date": "2026-06-01"
           },
           {
-            "commits": 2,
+            "commits": 3,
             "date": "2026-06-02"
           }
         ],
         "weekly": [
           {
-            "commits": 3,
+            "commits": 4,
             "week": "2026-W23"
           }
         ]
@@ -944,13 +969,13 @@
     "active_days_public_timeline": 7,
     "ai_marked_commits": 110,
     "codex_prompt_tasks": 62,
-    "net_lines": 84884,
+    "net_lines": 86824,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 241,
+    "total_commits": 243,
     "total_deletions": 2965,
-    "total_insertions": 87849
+    "total_insertions": 89789
   },
   "timeline": {
     "weekly_public": [
@@ -959,7 +984,7 @@
         "week": "2026-W22"
       },
       {
-        "commits": 13,
+        "commits": 14,
         "week": "2026-W23"
       }
     ]
