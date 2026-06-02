@@ -106,6 +106,11 @@
       "target": "general"
     },
     {
+      "mtime": "2026-06-02T15:44:05.301106+00:00",
+      "name": "CODEX_OLYMPUS_10_EV_REVIEW_AND_OBSERVABILITY_PROMPT.md",
+      "target": "olympus"
+    },
+    {
       "mtime": "2026-06-01T13:42:18.670652+00:00",
       "name": "CODEX_OLYMPUS_1_STRATEGY_COMPETITION_PROMPT.md",
       "target": "aegis-strategies"
@@ -139,6 +144,16 @@
       "mtime": "2026-06-02T04:48:09.705190+00:00",
       "name": "CODEX_OLYMPUS_7_AI_CODING_STATS_PROMPT.md",
       "target": "olympus"
+    },
+    {
+      "mtime": "2026-06-02T05:42:50.562023+00:00",
+      "name": "CODEX_OLYMPUS_8_FRONTEND_LAYOUT_TDD_PROMPT.md",
+      "target": "aegis-dashboard"
+    },
+    {
+      "mtime": "2026-06-02T05:45:51.798870+00:00",
+      "name": "CODEX_OLYMPUS_9_ALL_FRONTENDS_LAYOUT_PROMPT.md",
+      "target": "aegis-dashboard"
     },
     {
       "mtime": "2026-05-26T15:10:38.291695+00:00",
@@ -311,22 +326,22 @@
       "target": "aegis-dashboard"
     }
   ],
-  "generated_at": "2026-06-02T05:15:46.898564+00:00",
+  "generated_at": "2026-06-02T18:17:10.315833+00:00",
   "language_distribution_public": [
     {
-      "files": 42,
+      "files": 43,
       "language": "Python",
-      "loc": 20789
+      "loc": 21589
     },
     {
       "files": 23,
       "language": "Markdown",
-      "loc": 2445
+      "loc": 2457
     },
     {
-      "files": 16,
+      "files": 17,
       "language": "Other",
-      "loc": 1342
+      "loc": 1343
     },
     {
       "files": 8,
@@ -336,12 +351,12 @@
     {
       "files": 1,
       "language": "JSON",
-      "loc": 967
+      "loc": 992
     },
     {
       "files": 2,
       "language": "HTML",
-      "loc": 852
+      "loc": 865
     },
     {
       "files": 12,
@@ -368,16 +383,16 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 7,
+        "active_days": 8,
         "ai_marked_commits": 7,
-        "commits": 77,
-        "deletions": 730,
+        "commits": 78,
+        "deletions": 731,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 28966,
-        "last_commit_date": "2026-06-02T09:58:12+08:00",
-        "net_lines": 28236,
-        "pr_count": 23,
-        "tracked_files": 68
+        "insertions": 29779,
+        "last_commit_date": "2026-06-03T00:56:58+09:00",
+        "net_lines": 29048,
+        "pr_count": 24,
+        "tracked_files": 70
       },
       "ai_marked_samples": [
         {
@@ -411,14 +426,14 @@
       ],
       "language_distribution": [
         {
-          "files": 42,
+          "files": 43,
           "language": "Python",
-          "loc": 20789
+          "loc": 21589
         },
         {
           "files": 7,
           "language": "Markdown",
-          "loc": 833
+          "loc": 844
         },
         {
           "files": 2,
@@ -431,9 +446,9 @@
           "loc": 198
         },
         {
-          "files": 3,
+          "files": 4,
           "language": "Other",
-          "loc": 152
+          "loc": 153
         },
         {
           "files": 9,
@@ -444,8 +459,16 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 23,
+        "count": 24,
         "items": [
+          {
+            "merged": false,
+            "number": 24,
+            "review_url": "https://github.com/StevenG3/aegis/pull/24/files",
+            "state": "OPEN",
+            "title": "Add EV shadow observability",
+            "url": "https://github.com/StevenG3/aegis/pull/24"
+          },
           {
             "merged": true,
             "number": 23,
@@ -661,6 +684,10 @@
           {
             "commits": 6,
             "date": "2026-06-02"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-03"
           }
         ],
         "weekly": [
@@ -669,7 +696,7 @@
             "week": "2026-W22"
           },
           {
-            "commits": 10,
+            "commits": 11,
             "week": "2026-W23"
           }
         ]
@@ -680,10 +707,10 @@
       "aggregate": {
         "active_days": 10,
         "ai_marked_commits": 82,
-        "commits": 119,
-        "deletions": 1793,
-        "insertions": 16615,
-        "net_lines": 14822,
+        "commits": 120,
+        "deletions": 1799,
+        "insertions": 16623,
+        "net_lines": 14824,
         "pr_count": 4,
         "tracked_files": 181
       },
@@ -873,12 +900,12 @@
       "aggregate": {
         "active_days": 2,
         "ai_marked_commits": 0,
-        "commits": 4,
+        "commits": 5,
         "deletions": 13,
-        "insertions": 919,
-        "net_lines": 906,
+        "insertions": 1712,
+        "net_lines": 1699,
         "pr_count": 0,
-        "tracked_files": 9
+        "tracked_files": 25
       },
       "name": "StevenG3/ops",
       "private": true,
@@ -905,12 +932,12 @@
       "aggregate": {
         "active_days": 2,
         "ai_marked_commits": 0,
-        "commits": 4,
-        "deletions": 0,
+        "commits": 6,
+        "deletions": 24,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 2275,
-        "last_commit_date": "2026-06-02T14:14:19+09:00",
-        "net_lines": 2275,
+        "insertions": 2338,
+        "last_commit_date": "2026-06-02T23:05:45+09:00",
+        "net_lines": 2314,
         "pr_count": 0,
         "tracked_files": 7
       },
@@ -919,17 +946,17 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 967
+          "loc": 992
         },
         {
           "files": 4,
           "language": "Markdown",
-          "loc": 786
+          "loc": 787
         },
         {
           "files": 1,
           "language": "HTML",
-          "loc": 508
+          "loc": 521
         },
         {
           "files": 1,
@@ -950,13 +977,13 @@
             "date": "2026-06-01"
           },
           {
-            "commits": 3,
+            "commits": 5,
             "date": "2026-06-02"
           }
         ],
         "weekly": [
           {
-            "commits": 4,
+            "commits": 6,
             "week": "2026-W23"
           }
         ]
@@ -966,16 +993,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 7,
+    "active_days_public_timeline": 8,
     "ai_marked_commits": 110,
-    "codex_prompt_tasks": 62,
-    "net_lines": 86824,
+    "codex_prompt_tasks": 65,
+    "net_lines": 88470,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 243,
-    "total_deletions": 2965,
-    "total_insertions": 89789
+    "total_commits": 248,
+    "total_deletions": 2996,
+    "total_insertions": 91466
   },
   "timeline": {
     "weekly_public": [
@@ -984,7 +1011,7 @@
         "week": "2026-W22"
       },
       {
-        "commits": 14,
+        "commits": 17,
         "week": "2026-W23"
       }
     ]
