@@ -38,6 +38,24 @@ Each review cycle should follow this shape:
 4. Let Codex execute and verify.
 5. Review again before merge or deployment.
 
+## 4A. Review Integrity
+
+These rules are mandatory for Claude, Codex, and any future LLM working on a briefing/debrief/review loop:
+
+- **Review must verify code.** A debrief is only an index for faster orientation. It never replaces code, diff, endpoint, test, and CI verification. Reviewers must use `git`, `rg`, `curl`, tests, and logs to independently verify the debrief and actively search for unmentioned changes or gaps.
+- **Debriefs must be independently verifiable.** Each material claim must provide file:line references, runnable verification commands, and test or CI results. A reviewer should be able to reproduce the evidence without trusting the debrief conclusion.
+- **Skipped work must be explicit.** Every debrief must include `Known Limits / Skipped / Trade-offs` and list unimplemented, simplified, deferred, or bypassed requirements with reasons. Do not use vague wording such as "optional", "can", "if needed", or "could" to hide skipped core requirements.
+- **Debrief accuracy affects review score.** Misstating completion, omitting material gaps, or describing skipped core requirements as done is a review-integrity defect and should lower quality/compliance scoring.
+- **Read related reviews before executing.** Before any briefing, Codex must read relevant or recent files under `~/docs/reviews/`, include the deficiencies and corrective suggestions in execution planning, and either prioritize the correction or explicitly explain in the debrief why it was not done.
+
+Codex execution corrections from Olympus #12:
+
+- Do not silently skip work because a briefing says "optional", "if", or "can". Evaluate it, decide whether it is core, and document done/not-done plus the reason. If core status is unclear, stop and ask.
+- Do not avoid judgment-heavy requirements such as write paths, retention, contradiction handling, safety boundaries, or edge-case policy. These are often core requirements.
+- Do not leave PRs open after CI is green when authorized to merge. If not authorized, state who must review or merge and why it remains open.
+
+Debriefs must use `/home/gggqqy/docs/briefings/_DEBRIEF_TEMPLATE.md`, including `Verifiable Evidence` and `Known Limits / Skipped / Trade-offs`.
+
 ## 5. Scoring rubric
 
 Use a 10-point score with a short breakdown:
