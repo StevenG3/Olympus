@@ -328,11 +328,6 @@
         <div id="repoTable"></div>
       </section>
 
-      <section class="panel" style="margin-top: 14px">
-        <h2>Claude-designed AI Tasks</h2>
-        <div class="task-table" id="taskTable"></div>
-      </section>
-
       <p class="footer-note" id="safetyNote"></p>
     </main>
 
@@ -373,7 +368,7 @@
           makeCard("Net lines", n(summary.net_lines), `${n(summary.total_insertions)} inserted / ${n(summary.total_deletions)} deleted`),
           makeCard("Repositories", n(summary.repositories), `${n(summary.public_repositories)} public / ${n(summary.private_repositories)} private`),
           makeCard("Active days", n(summary.active_days_public_timeline), "public timeline days"),
-          makeCard("AI tasks", n(summary.codex_prompt_tasks), "CODEX_*.md intent files"),
+          makeCard("AI tasks", n(summary.codex_prompt_tasks), "aggregated task intents"),
         ].join("");
       }
 
@@ -394,17 +389,6 @@
           <thead><tr><th>Repository</th><th>Commits</th><th>AI-marked</th><th>Net lines</th><th>Active days</th><th>PRs</th></tr></thead>
           <tbody>${rows.join("")}</tbody>
         </table></div>`;
-      }
-
-      function renderTasks(tasks) {
-        const rows = tasks.slice().reverse().map((task) => {
-          const date = task.mtime ? dateFmt.format(new Date(task.mtime)) : "";
-          return `<tr><td>${esc(task.name)}</td><td>${esc(task.target)}</td><td>${esc(date)}</td></tr>`;
-        });
-        document.getElementById("taskTable").innerHTML = `<table>
-          <thead><tr><th>Prompt file</th><th>Target</th><th>Modified</th></tr></thead>
-          <tbody>${rows.join("")}</tbody>
-        </table>`;
       }
 
       function renderPrs(repos) {
@@ -508,7 +492,6 @@
           renderCharts(stats);
           renderRepoTable(stats.repositories || []);
           renderPrs(stats.repositories || []);
-          renderTasks(stats.codex_prompts || []);
           document.getElementById("safetyNote").textContent = stats.public_safety_note || "";
         } catch (error) {
           document.getElementById("summary").innerHTML = `<article class="card error">Failed to load stats: ${esc(error.message)}</article>`;
