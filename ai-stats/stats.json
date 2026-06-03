@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T02:08:39.050390+00:00",
+  "generated_at": "2026-06-03T02:09:44.674887+00:00",
   "language_distribution_public": [
     {
       "files": 43,
@@ -22,14 +22,14 @@
       "loc": 1271
     },
     {
-      "files": 1,
-      "language": "JSON",
-      "loc": 1019
-    },
-    {
       "files": 2,
       "language": "HTML",
       "loc": 848
+    },
+    {
+      "files": 1,
+      "language": "JSON",
+      "loc": 734
     },
     {
       "files": 12,
@@ -609,12 +609,12 @@
     },
     {
       "aggregate": {
-        "active_days": 2,
+        "active_days": 3,
         "ai_marked_commits": 0,
-        "commits": 5,
-        "deletions": 13,
-        "insertions": 1712,
-        "net_lines": 1699,
+        "commits": 6,
+        "deletions": 36,
+        "insertions": 1728,
+        "net_lines": 1692,
         "pr_count": 0,
         "tracked_files": 25
       },
@@ -643,26 +643,26 @@
       "aggregate": {
         "active_days": 3,
         "ai_marked_commits": 0,
-        "commits": 7,
-        "deletions": 72,
+        "commits": 8,
+        "deletions": 453,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 2413,
-        "last_commit_date": "2026-06-03T03:17:10+09:00",
-        "net_lines": 2341,
+        "insertions": 2492,
+        "last_commit_date": "2026-06-03T11:09:32+09:00",
+        "net_lines": 2039,
         "pr_count": 0,
         "tracked_files": 7
       },
       "ai_marked_samples": [],
       "language_distribution": [
         {
-          "files": 1,
-          "language": "JSON",
-          "loc": 1019
-        },
-        {
           "files": 4,
           "language": "Markdown",
           "loc": 787
+        },
+        {
+          "files": 1,
+          "language": "JSON",
+          "loc": 734
         },
         {
           "files": 1,
@@ -692,13 +692,13 @@
             "date": "2026-06-02"
           },
           {
-            "commits": 1,
+            "commits": 2,
             "date": "2026-06-03"
           }
         ],
         "weekly": [
           {
-            "commits": 7,
+            "commits": 8,
             "week": "2026-W23"
           }
         ]
@@ -711,13 +711,13 @@
     "active_days_public_timeline": 8,
     "ai_marked_commits": 110,
     "codex_prompt_tasks": 65,
-    "net_lines": 89216,
+    "net_lines": 88907,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 252,
-    "total_deletions": 3065,
-    "total_insertions": 92281
+    "total_commits": 254,
+    "total_deletions": 3469,
+    "total_insertions": 92376
   },
   "timeline": {
     "weekly_public": [
@@ -726,7 +726,7 @@
         "week": "2026-W22"
       },
       {
-        "commits": 20,
+        "commits": 21,
         "week": "2026-W23"
       }
     ]
