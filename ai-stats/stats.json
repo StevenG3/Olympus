@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-03T02:09:44.674887+00:00",
+  "generated_at": "2026-06-03T18:17:10.556708+00:00",
   "language_distribution_public": [
     {
-      "files": 43,
+      "files": 48,
       "language": "Python",
-      "loc": 22173
+      "loc": 26574
     },
     {
-      "files": 23,
+      "files": 24,
       "language": "Markdown",
-      "loc": 2457
+      "loc": 2516
     },
     {
       "files": 17,
       "language": "Other",
-      "loc": 1343
+      "loc": 1375
     },
     {
       "files": 8,
@@ -27,14 +27,14 @@
       "loc": 848
     },
     {
+      "files": 12,
+      "language": "YAML",
+      "loc": 738
+    },
+    {
       "files": 1,
       "language": "JSON",
       "loc": 734
-    },
-    {
-      "files": 12,
-      "language": "YAML",
-      "loc": 717
     },
     {
       "files": 5,
@@ -86,16 +86,16 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 8,
+        "active_days": 9,
         "ai_marked_commits": 7,
-        "commits": 80,
-        "deletions": 751,
+        "commits": 96,
+        "deletions": 901,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 30384,
-        "last_commit_date": "2026-06-03T11:06:21+09:00",
-        "net_lines": 29633,
-        "pr_count": 25,
-        "tracked_files": 70
+        "insertions": 39491,
+        "last_commit_date": "2026-06-04T01:25:10+09:00",
+        "net_lines": 38590,
+        "pr_count": 33,
+        "tracked_files": 76
       },
       "ai_marked_samples": [
         {
@@ -129,19 +129,19 @@
       ],
       "language_distribution": [
         {
-          "files": 43,
+          "files": 48,
           "language": "Python",
-          "loc": 22173
+          "loc": 26574
         },
         {
-          "files": 7,
+          "files": 8,
           "language": "Markdown",
-          "loc": 844
+          "loc": 885
         },
         {
           "files": 2,
           "language": "YAML",
-          "loc": 287
+          "loc": 308
         },
         {
           "files": 5,
@@ -151,7 +151,7 @@
         {
           "files": 4,
           "language": "Other",
-          "loc": 153
+          "loc": 185
         },
         {
           "files": 9,
@@ -162,21 +162,85 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 25,
+        "count": 33,
         "items": [
           {
             "merged": false,
+            "number": 33,
+            "review_url": "https://github.com/StevenG3/aegis/pull/33/files",
+            "state": "OPEN",
+            "title": "Add TradingAgents edge evaluation report",
+            "url": "https://github.com/StevenG3/aegis/pull/33"
+          },
+          {
+            "merged": true,
+            "number": 32,
+            "review_url": "https://github.com/StevenG3/aegis/pull/32/files",
+            "state": "MERGED",
+            "title": "Add funding arb evidence runner",
+            "url": "https://github.com/StevenG3/aegis/pull/32"
+          },
+          {
+            "merged": true,
+            "number": 31,
+            "review_url": "https://github.com/StevenG3/aegis/pull/31/files",
+            "state": "MERGED",
+            "title": "Add funding arb backtest candidate support",
+            "url": "https://github.com/StevenG3/aegis/pull/31"
+          },
+          {
+            "merged": true,
+            "number": 30,
+            "review_url": "https://github.com/StevenG3/aegis/pull/30/files",
+            "state": "MERGED",
+            "title": "[codex] Add paper bootstrap autonomy safeguards",
+            "url": "https://github.com/StevenG3/aegis/pull/30"
+          },
+          {
+            "merged": true,
+            "number": 29,
+            "review_url": "https://github.com/StevenG3/aegis/pull/29/files",
+            "state": "MERGED",
+            "title": "[codex] Add bootstrap transparency and run controls",
+            "url": "https://github.com/StevenG3/aegis/pull/29"
+          },
+          {
+            "merged": true,
+            "number": 28,
+            "review_url": "https://github.com/StevenG3/aegis/pull/28/files",
+            "state": "MERGED",
+            "title": "[codex] Fix paper feedback data starvation",
+            "url": "https://github.com/StevenG3/aegis/pull/28"
+          },
+          {
+            "merged": true,
+            "number": 27,
+            "review_url": "https://github.com/StevenG3/aegis/pull/27/files",
+            "state": "MERGED",
+            "title": "Add auditable memory write path",
+            "url": "https://github.com/StevenG3/aegis/pull/27"
+          },
+          {
+            "merged": true,
+            "number": 26,
+            "review_url": "https://github.com/StevenG3/aegis/pull/26/files",
+            "state": "MERGED",
+            "title": "[codex] Add review integrity working rules",
+            "url": "https://github.com/StevenG3/aegis/pull/26"
+          },
+          {
+            "merged": true,
             "number": 25,
             "review_url": "https://github.com/StevenG3/aegis/pull/25/files",
-            "state": "OPEN",
+            "state": "MERGED",
             "title": "Add auditable memory recall layer",
             "url": "https://github.com/StevenG3/aegis/pull/25"
           },
           {
-            "merged": false,
+            "merged": true,
             "number": 24,
             "review_url": "https://github.com/StevenG3/aegis/pull/24/files",
-            "state": "OPEN",
+            "state": "MERGED",
             "title": "Add EV shadow observability",
             "url": "https://github.com/StevenG3/aegis/pull/24"
           },
@@ -397,8 +461,12 @@
             "date": "2026-06-02"
           },
           {
-            "commits": 3,
+            "commits": 17,
             "date": "2026-06-03"
+          },
+          {
+            "commits": 2,
+            "date": "2026-06-04"
           }
         ],
         "weekly": [
@@ -407,7 +475,7 @@
             "week": "2026-W22"
           },
           {
-            "commits": 13,
+            "commits": 29,
             "week": "2026-W23"
           }
         ]
@@ -418,12 +486,12 @@
       "aggregate": {
         "active_days": 11,
         "ai_marked_commits": 82,
-        "commits": 121,
-        "deletions": 1800,
-        "insertions": 16758,
-        "net_lines": 14958,
-        "pr_count": 5,
-        "tracked_files": 181
+        "commits": 125,
+        "deletions": 1801,
+        "insertions": 17064,
+        "net_lines": 15263,
+        "pr_count": 7,
+        "tracked_files": 182
       },
       "name": "StevenG3/hermes-agent",
       "private": true,
@@ -643,13 +711,13 @@
       "aggregate": {
         "active_days": 3,
         "ai_marked_commits": 0,
-        "commits": 8,
-        "deletions": 453,
+        "commits": 11,
+        "deletions": 481,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 2492,
-        "last_commit_date": "2026-06-03T11:09:32+09:00",
-        "net_lines": 2039,
-        "pr_count": 0,
+        "insertions": 2556,
+        "last_commit_date": "2026-06-03T13:16:02+08:00",
+        "net_lines": 2075,
+        "pr_count": 1,
         "tracked_files": 7
       },
       "ai_marked_samples": [],
@@ -657,7 +725,7 @@
         {
           "files": 4,
           "language": "Markdown",
-          "loc": 787
+          "loc": 805
         },
         {
           "files": 1,
@@ -678,8 +746,17 @@
       "name": "StevenG3/Olympus",
       "private": false,
       "pull_requests": {
-        "count": 0,
-        "items": []
+        "count": 1,
+        "items": [
+          {
+            "merged": true,
+            "number": 1,
+            "review_url": "https://github.com/StevenG3/Olympus/pull/1/files",
+            "state": "MERGED",
+            "title": "[codex] Add review integrity conventions",
+            "url": "https://github.com/StevenG3/Olympus/pull/1"
+          }
+        ]
       },
       "timeline": {
         "daily": [
@@ -692,13 +769,13 @@
             "date": "2026-06-02"
           },
           {
-            "commits": 2,
+            "commits": 5,
             "date": "2026-06-03"
           }
         ],
         "weekly": [
           {
-            "commits": 8,
+            "commits": 11,
             "week": "2026-W23"
           }
         ]
@@ -708,16 +785,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 8,
+    "active_days_public_timeline": 9,
     "ai_marked_commits": 110,
     "codex_prompt_tasks": 65,
-    "net_lines": 88907,
+    "net_lines": 98205,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 254,
-    "total_deletions": 3469,
-    "total_insertions": 92376
+    "total_commits": 277,
+    "total_deletions": 3648,
+    "total_insertions": 101853
   },
   "timeline": {
     "weekly_public": [
@@ -726,7 +803,7 @@
         "week": "2026-W22"
       },
       {
-        "commits": 21,
+        "commits": 40,
         "week": "2026-W23"
       }
     ]
