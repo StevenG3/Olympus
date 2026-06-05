@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-04T18:17:09.720801+00:00",
+  "generated_at": "2026-06-05T18:17:10.895440+00:00",
   "language_distribution_public": [
     {
-      "files": 54,
+      "files": 58,
       "language": "Python",
-      "loc": 28863
+      "loc": 31167
     },
     {
       "files": 24,
       "language": "Markdown",
-      "loc": 2530
+      "loc": 2531
     },
     {
       "files": 17,
@@ -22,14 +22,14 @@
       "loc": 1271
     },
     {
+      "files": 3,
+      "language": "JSON",
+      "loc": 870
+    },
+    {
       "files": 2,
       "language": "HTML",
       "loc": 848
-    },
-    {
-      "files": 1,
-      "language": "JSON",
-      "loc": 811
     },
     {
       "files": 12,
@@ -86,16 +86,16 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 10,
+        "active_days": 11,
         "ai_marked_commits": 7,
-        "commits": 103,
+        "commits": 107,
         "deletions": 921,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 45029,
-        "last_commit_date": "2026-06-05T00:44:11+08:00",
-        "net_lines": 44108,
-        "pr_count": 36,
-        "tracked_files": 82
+        "insertions": 49533,
+        "last_commit_date": "2026-06-06T00:55:46+08:00",
+        "net_lines": 48612,
+        "pr_count": 38,
+        "tracked_files": 88
       },
       "ai_marked_samples": [
         {
@@ -129,14 +129,14 @@
       ],
       "language_distribution": [
         {
-          "files": 54,
+          "files": 58,
           "language": "Python",
-          "loc": 28863
+          "loc": 31167
         },
         {
           "files": 8,
           "language": "Markdown",
-          "loc": 899
+          "loc": 900
         },
         {
           "files": 2,
@@ -157,13 +157,34 @@
           "files": 9,
           "language": "Docker",
           "loc": 74
+        },
+        {
+          "files": 2,
+          "language": "JSON",
+          "loc": 27
         }
       ],
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 36,
+        "count": 38,
         "items": [
+          {
+            "merged": true,
+            "number": 38,
+            "review_url": "https://github.com/StevenG3/aegis/pull/38/files",
+            "state": "MERGED",
+            "title": "[codex] Add Olympus pure risk allocation candidate",
+            "url": "https://github.com/StevenG3/aegis/pull/38"
+          },
+          {
+            "merged": true,
+            "number": 37,
+            "review_url": "https://github.com/StevenG3/aegis/pull/37/files",
+            "state": "MERGED",
+            "title": "[codex] Add Olympus risk configuration candidate",
+            "url": "https://github.com/StevenG3/aegis/pull/37"
+          },
           {
             "merged": true,
             "number": 36,
@@ -495,6 +516,10 @@
           {
             "commits": 6,
             "date": "2026-06-05"
+          },
+          {
+            "commits": 4,
+            "date": "2026-06-06"
           }
         ],
         "weekly": [
@@ -503,7 +528,7 @@
             "week": "2026-W22"
           },
           {
-            "commits": 36,
+            "commits": 40,
             "week": "2026-W23"
           }
         ]
@@ -737,14 +762,14 @@
     },
     {
       "aggregate": {
-        "active_days": 4,
+        "active_days": 5,
         "ai_marked_commits": 0,
-        "commits": 12,
-        "deletions": 535,
+        "commits": 13,
+        "deletions": 578,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 2687,
-        "last_commit_date": "2026-06-04T03:17:10+09:00",
-        "net_lines": 2152,
+        "insertions": 2762,
+        "last_commit_date": "2026-06-05T03:17:09+09:00",
+        "net_lines": 2184,
         "pr_count": 1,
         "tracked_files": 7
       },
@@ -753,7 +778,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 811
+          "loc": 843
         },
         {
           "files": 4,
@@ -803,11 +828,15 @@
           {
             "commits": 1,
             "date": "2026-06-04"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-05"
           }
         ],
         "weekly": [
           {
-            "commits": 12,
+            "commits": 13,
             "week": "2026-W23"
           }
         ]
@@ -817,16 +846,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 10,
+    "active_days_public_timeline": 11,
     "ai_marked_commits": 110,
     "codex_prompt_tasks": 65,
-    "net_lines": 103800,
+    "net_lines": 108336,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 285,
-    "total_deletions": 3722,
-    "total_insertions": 107522
+    "total_commits": 290,
+    "total_deletions": 3765,
+    "total_insertions": 112101
   },
   "timeline": {
     "weekly_public": [
@@ -835,7 +864,7 @@
         "week": "2026-W22"
       },
       {
-        "commits": 48,
+        "commits": 53,
         "week": "2026-W23"
       }
     ]
