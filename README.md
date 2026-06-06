@@ -23,7 +23,7 @@ Olympus 是系统总称。本 public 仓库只放总览和部署 runbook,不包�
 |---|---|---|---|
 | **Olympus** | https://github.com/StevenG3/Olympus | public | Overview, architecture, public deploy runbook / 总览、架构、公开部署 runbook |
 | **Aegis** | https://github.com/StevenG3/aegis | public | Trading core and generic services / 交易内核与通用服务 |
-| **Hermes Agent** | https://github.com/StevenG3/hermes-agent | public | Natural-language gateway and skill routing / 自然语言网关与技能路由 |
+| **Hermes Agent** | https://github.com/StevenG3/hermes-agent | private | Natural-language gateway and skill routing / 自然语言网关与技能路由 |
 | **TradingAgents** | https://github.com/TauricResearch/TradingAgents | public upstream | Multi-agent analysis brain / 多智能体分析大脑 |
 | **Aegis Dashboard** | https://github.com/StevenG3/aegis-dashboard | private | Local positions, PnL, backtest, and monitoring UI / 本地持仓、盈亏、回测与监控看板 |
 | **Aegis Strategies** | https://github.com/StevenG3/aegis-strategies | private | Private strategy incubation, competition runs, and graduation workflow / 私有策略孵化、竞赛跑批与毕业流程 |
