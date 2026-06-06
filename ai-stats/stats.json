@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-05T18:17:10.895440+00:00",
+  "generated_at": "2026-06-06T18:17:09.487757+00:00",
   "language_distribution_public": [
     {
-      "files": 58,
+      "files": 69,
       "language": "Python",
-      "loc": 31167
+      "loc": 36139
     },
     {
-      "files": 24,
+      "files": 25,
       "language": "Markdown",
-      "loc": 2531
+      "loc": 2619
     },
     {
-      "files": 17,
+      "files": 16,
       "language": "Other",
       "loc": 1375
     },
@@ -22,9 +22,9 @@
       "loc": 1271
     },
     {
-      "files": 3,
+      "files": 9,
       "language": "JSON",
-      "loc": 870
+      "loc": 1195
     },
     {
       "files": 2,
@@ -32,9 +32,9 @@
       "loc": 848
     },
     {
-      "files": 12,
+      "files": 14,
       "language": "YAML",
-      "loc": 738
+      "loc": 776
     },
     {
       "files": 5,
@@ -86,16 +86,16 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 11,
+        "active_days": 12,
         "ai_marked_commits": 7,
-        "commits": 107,
-        "deletions": 921,
+        "commits": 136,
+        "deletions": 20145,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 49533,
-        "last_commit_date": "2026-06-06T00:55:46+08:00",
-        "net_lines": 48612,
-        "pr_count": 38,
-        "tracked_files": 88
+        "insertions": 79545,
+        "last_commit_date": "2026-06-06T23:45:49+08:00",
+        "net_lines": 59400,
+        "pr_count": 52,
+        "tracked_files": 107
       },
       "ai_marked_samples": [
         {
@@ -129,19 +129,24 @@
       ],
       "language_distribution": [
         {
-          "files": 58,
+          "files": 69,
           "language": "Python",
-          "loc": 31167
+          "loc": 36139
+        },
+        {
+          "files": 9,
+          "language": "Markdown",
+          "loc": 988
+        },
+        {
+          "files": 4,
+          "language": "YAML",
+          "loc": 346
         },
         {
           "files": 8,
-          "language": "Markdown",
-          "loc": 900
-        },
-        {
-          "files": 2,
-          "language": "YAML",
-          "loc": 308
+          "language": "JSON",
+          "loc": 323
         },
         {
           "files": 5,
@@ -149,7 +154,7 @@
           "loc": 199
         },
         {
-          "files": 4,
+          "files": 3,
           "language": "Other",
           "loc": 185
         },
@@ -157,18 +162,125 @@
           "files": 9,
           "language": "Docker",
           "loc": 74
-        },
-        {
-          "files": 2,
-          "language": "JSON",
-          "loc": 27
         }
       ],
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 38,
+        "count": 52,
         "items": [
+          {
+            "merged": true,
+            "number": 52,
+            "review_url": "https://github.com/StevenG3/aegis/pull/52/files",
+            "state": "MERGED",
+            "title": "Add adversarial risk and execution safety tests",
+            "url": "https://github.com/StevenG3/aegis/pull/52"
+          },
+          {
+            "merged": true,
+            "number": 51,
+            "review_url": "https://github.com/StevenG3/aegis/pull/51/files",
+            "state": "MERGED",
+            "title": "Harden EDGAR PIT metadata and factor computability map",
+            "url": "https://github.com/StevenG3/aegis/pull/51"
+          },
+          {
+            "merged": true,
+            "number": 50,
+            "review_url": "https://github.com/StevenG3/aegis/pull/50/files",
+            "state": "MERGED",
+            "title": "Add RSI autotune walk-forward falsification",
+            "url": "https://github.com/StevenG3/aegis/pull/50"
+          },
+          {
+            "merged": true,
+            "number": 49,
+            "review_url": "https://github.com/StevenG3/aegis/pull/49/files",
+            "state": "MERGED",
+            "title": "Add EDGAR derived concepts and CIK continuity coverage",
+            "url": "https://github.com/StevenG3/aegis/pull/49"
+          },
+          {
+            "merged": true,
+            "number": 48,
+            "review_url": "https://github.com/StevenG3/aegis/pull/48/files",
+            "state": "MERGED",
+            "title": "Harden public boundary and add Chinese README",
+            "url": "https://github.com/StevenG3/aegis/pull/48"
+          },
+          {
+            "merged": true,
+            "number": 47,
+            "review_url": "https://github.com/StevenG3/aegis/pull/47/files",
+            "state": "MERGED",
+            "title": "Add EDGAR PIT fundamentals primitives",
+            "url": "https://github.com/StevenG3/aegis/pull/47"
+          },
+          {
+            "merged": true,
+            "number": 46,
+            "review_url": "https://github.com/StevenG3/aegis/pull/46/files",
+            "state": "MERGED",
+            "title": "[codex] Align Olympus evidence output path",
+            "url": "https://github.com/StevenG3/aegis/pull/46"
+          },
+          {
+            "merged": true,
+            "number": 45,
+            "review_url": "https://github.com/StevenG3/aegis/pull/45/files",
+            "state": "MERGED",
+            "title": "[codex] Document value factor data gate",
+            "url": "https://github.com/StevenG3/aegis/pull/45"
+          },
+          {
+            "merged": true,
+            "number": 44,
+            "review_url": "https://github.com/StevenG3/aegis/pull/44/files",
+            "state": "MERGED",
+            "title": "[codex] Document Olympus route closure",
+            "url": "https://github.com/StevenG3/aegis/pull/44"
+          },
+          {
+            "merged": true,
+            "number": 43,
+            "review_url": "https://github.com/StevenG3/aegis/pull/43/files",
+            "state": "MERGED",
+            "title": "Complete Olympus 31 research discipline metrics",
+            "url": "https://github.com/StevenG3/aegis/pull/43"
+          },
+          {
+            "merged": true,
+            "number": 42,
+            "review_url": "https://github.com/StevenG3/aegis/pull/42/files",
+            "state": "MERGED",
+            "title": "Add Olympus 31 reposition status-quo validation",
+            "url": "https://github.com/StevenG3/aegis/pull/42"
+          },
+          {
+            "merged": true,
+            "number": 41,
+            "review_url": "https://github.com/StevenG3/aegis/pull/41/files",
+            "state": "MERGED",
+            "title": "Add Olympus 30 equal-weight allocation validation",
+            "url": "https://github.com/StevenG3/aegis/pull/41"
+          },
+          {
+            "merged": true,
+            "number": 40,
+            "review_url": "https://github.com/StevenG3/aegis/pull/40/files",
+            "state": "MERGED",
+            "title": "[codex] document olympus29 prompt scorecard",
+            "url": "https://github.com/StevenG3/aegis/pull/40"
+          },
+          {
+            "merged": true,
+            "number": 39,
+            "review_url": "https://github.com/StevenG3/aegis/pull/39/files",
+            "state": "MERGED",
+            "title": "[codex] olympus29 diversified risk allocation",
+            "url": "https://github.com/StevenG3/aegis/pull/39"
+          },
           {
             "merged": true,
             "number": 38,
@@ -518,8 +630,12 @@
             "date": "2026-06-05"
           },
           {
-            "commits": 4,
+            "commits": 31,
             "date": "2026-06-06"
+          },
+          {
+            "commits": 2,
+            "date": "2026-06-07"
           }
         ],
         "weekly": [
@@ -528,7 +644,7 @@
             "week": "2026-W22"
           },
           {
-            "commits": 40,
+            "commits": 69,
             "week": "2026-W23"
           }
         ]
@@ -553,13 +669,13 @@
     },
     {
       "aggregate": {
-        "active_days": 3,
+        "active_days": 4,
         "ai_marked_commits": 0,
-        "commits": 10,
-        "deletions": 182,
-        "insertions": 1439,
-        "net_lines": 1257,
-        "pr_count": 0,
+        "commits": 14,
+        "deletions": 190,
+        "insertions": 2557,
+        "net_lines": 2367,
+        "pr_count": 2,
         "tracked_files": 6
       },
       "name": "StevenG3/aegis-dashboard",
@@ -762,15 +878,15 @@
     },
     {
       "aggregate": {
-        "active_days": 5,
+        "active_days": 6,
         "ai_marked_commits": 0,
-        "commits": 13,
-        "deletions": 578,
+        "commits": 16,
+        "deletions": 615,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 2762,
-        "last_commit_date": "2026-06-05T03:17:09+09:00",
-        "net_lines": 2184,
-        "pr_count": 1,
+        "insertions": 2828,
+        "last_commit_date": "2026-06-06T16:34:49+08:00",
+        "net_lines": 2213,
+        "pr_count": 2,
         "tracked_files": 7
       },
       "ai_marked_samples": [],
@@ -778,7 +894,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 843
+          "loc": 872
         },
         {
           "files": 4,
@@ -799,8 +915,16 @@
       "name": "StevenG3/Olympus",
       "private": false,
       "pull_requests": {
-        "count": 1,
+        "count": 2,
         "items": [
+          {
+            "merged": true,
+            "number": 2,
+            "review_url": "https://github.com/StevenG3/Olympus/pull/2/files",
+            "state": "MERGED",
+            "title": "Correct repository visibility table",
+            "url": "https://github.com/StevenG3/Olympus/pull/2"
+          },
           {
             "merged": true,
             "number": 1,
@@ -832,11 +956,15 @@
           {
             "commits": 1,
             "date": "2026-06-05"
+          },
+          {
+            "commits": 3,
+            "date": "2026-06-06"
           }
         ],
         "weekly": [
           {
-            "commits": 13,
+            "commits": 16,
             "week": "2026-W23"
           }
         ]
@@ -846,16 +974,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 11,
+    "active_days_public_timeline": 12,
     "ai_marked_commits": 110,
     "codex_prompt_tasks": 65,
-    "net_lines": 108336,
+    "net_lines": 120263,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 290,
-    "total_deletions": 3765,
-    "total_insertions": 112101
+    "total_commits": 326,
+    "total_deletions": 23034,
+    "total_insertions": 143297
   },
   "timeline": {
     "weekly_public": [
@@ -864,7 +992,7 @@
         "week": "2026-W22"
       },
       {
-        "commits": 53,
+        "commits": 85,
         "week": "2026-W23"
       }
     ]
