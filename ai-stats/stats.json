@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-06T18:17:09.487757+00:00",
+  "generated_at": "2026-06-07T18:17:09.307460+00:00",
   "language_distribution_public": [
     {
-      "files": 69,
+      "files": 77,
       "language": "Python",
-      "loc": 36139
+      "loc": 38176
     },
     {
       "files": 25,
@@ -17,14 +17,14 @@
       "loc": 1375
     },
     {
+      "files": 9,
+      "language": "JSON",
+      "loc": 1323
+    },
+    {
       "files": 8,
       "language": "Shell",
       "loc": 1271
-    },
-    {
-      "files": 9,
-      "language": "JSON",
-      "loc": 1195
     },
     {
       "files": 2,
@@ -87,17 +87,25 @@
     {
       "aggregate": {
         "active_days": 12,
-        "ai_marked_commits": 7,
-        "commits": 136,
-        "deletions": 20145,
+        "ai_marked_commits": 9,
+        "commits": 147,
+        "deletions": 20434,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 79545,
-        "last_commit_date": "2026-06-06T23:45:49+08:00",
-        "net_lines": 59400,
-        "pr_count": 52,
-        "tracked_files": 107
+        "insertions": 83258,
+        "last_commit_date": "2026-06-07T18:59:58+08:00",
+        "net_lines": 62824,
+        "pr_count": 58,
+        "tracked_files": 115
       },
       "ai_marked_samples": [
+        {
+          "sha": "b1040af510d5",
+          "subject": "Merge pull request #56 from StevenG3/codex/core-02a-orchestrator-boundaries"
+        },
+        {
+          "sha": "85f1242bca2e",
+          "subject": "Merge pull request #55 from StevenG3/codex/core-03-token-gaps"
+        },
         {
           "sha": "df5e60a33662",
           "subject": "Merge pull request #20 from StevenG3/codex/strategy-healthcheck-gate"
@@ -129,9 +137,9 @@
       ],
       "language_distribution": [
         {
-          "files": 69,
+          "files": 77,
           "language": "Python",
-          "loc": 36139
+          "loc": 38176
         },
         {
           "files": 9,
@@ -167,8 +175,56 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 52,
+        "count": 58,
         "items": [
+          {
+            "merged": true,
+            "number": 58,
+            "review_url": "https://github.com/StevenG3/aegis/pull/58/files",
+            "state": "MERGED",
+            "title": "fix: include OKX earn loan balances",
+            "url": "https://github.com/StevenG3/aegis/pull/58"
+          },
+          {
+            "merged": true,
+            "number": 57,
+            "review_url": "https://github.com/StevenG3/aegis/pull/57/files",
+            "state": "MERGED",
+            "title": "Add Olympus survivor-light pipeline",
+            "url": "https://github.com/StevenG3/aegis/pull/57"
+          },
+          {
+            "merged": true,
+            "number": 56,
+            "review_url": "https://github.com/StevenG3/aegis/pull/56/files",
+            "state": "MERGED",
+            "title": "CORE 02A: prepare orchestrator dependency boundaries",
+            "url": "https://github.com/StevenG3/aegis/pull/56"
+          },
+          {
+            "merged": true,
+            "number": 55,
+            "review_url": "https://github.com/StevenG3/aegis/pull/55/files",
+            "state": "MERGED",
+            "title": "CORE 03: tighten confirmation token validation",
+            "url": "https://github.com/StevenG3/aegis/pull/55"
+          },
+          {
+            "merged": true,
+            "number": 54,
+            "review_url": "https://github.com/StevenG3/aegis/pull/54/files",
+            "state": "MERGED",
+            "title": "Expand OKX earn staking balance aggregation",
+            "url": "https://github.com/StevenG3/aegis/pull/54"
+          },
+          {
+            "merged": true,
+            "number": 53,
+            "review_url": "https://github.com/StevenG3/aegis/pull/53/files",
+            "state": "MERGED",
+            "title": "Expand exchange Earn balance aggregation",
+            "url": "https://github.com/StevenG3/aegis/pull/53"
+          },
           {
             "merged": true,
             "number": 52,
@@ -634,7 +690,7 @@
             "date": "2026-06-06"
           },
           {
-            "commits": 2,
+            "commits": 13,
             "date": "2026-06-07"
           }
         ],
@@ -644,7 +700,7 @@
             "week": "2026-W22"
           },
           {
-            "commits": 69,
+            "commits": 80,
             "week": "2026-W23"
           }
         ]
@@ -878,14 +934,14 @@
     },
     {
       "aggregate": {
-        "active_days": 6,
+        "active_days": 7,
         "ai_marked_commits": 0,
-        "commits": 16,
-        "deletions": 615,
+        "commits": 17,
+        "deletions": 670,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 2828,
-        "last_commit_date": "2026-06-06T16:34:49+08:00",
-        "net_lines": 2213,
+        "insertions": 3011,
+        "last_commit_date": "2026-06-07T03:17:09+09:00",
+        "net_lines": 2341,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -894,7 +950,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 872
+          "loc": 1000
         },
         {
           "files": 4,
@@ -960,11 +1016,15 @@
           {
             "commits": 3,
             "date": "2026-06-06"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-07"
           }
         ],
         "weekly": [
           {
-            "commits": 16,
+            "commits": 17,
             "week": "2026-W23"
           }
         ]
@@ -975,15 +1035,15 @@
   "schema_version": 1,
   "summary": {
     "active_days_public_timeline": 12,
-    "ai_marked_commits": 110,
+    "ai_marked_commits": 112,
     "codex_prompt_tasks": 65,
-    "net_lines": 120263,
+    "net_lines": 123815,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 326,
-    "total_deletions": 23034,
-    "total_insertions": 143297
+    "total_commits": 338,
+    "total_deletions": 23378,
+    "total_insertions": 147193
   },
   "timeline": {
     "weekly_public": [
@@ -992,7 +1052,7 @@
         "week": "2026-W22"
       },
       {
-        "commits": 85,
+        "commits": 97,
         "week": "2026-W23"
       }
     ]
