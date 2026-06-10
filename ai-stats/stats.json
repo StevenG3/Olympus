@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-09T18:17:10.228684+00:00",
+  "generated_at": "2026-06-10T18:17:10.282315+00:00",
   "language_distribution_public": [
     {
-      "files": 77,
+      "files": 96,
       "language": "Python",
-      "loc": 38176
+      "loc": 39926
     },
     {
       "files": 25,
@@ -12,9 +12,9 @@
       "loc": 2619
     },
     {
-      "files": 9,
+      "files": 11,
       "language": "JSON",
-      "loc": 1395
+      "loc": 1438
     },
     {
       "files": 16,
@@ -86,18 +86,38 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 12,
-        "ai_marked_commits": 9,
-        "commits": 147,
-        "deletions": 20434,
+        "active_days": 14,
+        "ai_marked_commits": 14,
+        "commits": 157,
+        "deletions": 26860,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 83258,
-        "last_commit_date": "2026-06-07T18:59:58+08:00",
-        "net_lines": 62824,
-        "pr_count": 58,
-        "tracked_files": 115
+        "insertions": 133473,
+        "last_commit_date": "2026-06-11T01:20:03+09:00",
+        "net_lines": 106613,
+        "pr_count": 0,
+        "tracked_files": 136
       },
       "ai_marked_samples": [
+        {
+          "sha": "00fe9bbbbd86",
+          "subject": "Implement Sharadar delisting-aware price adapter (free-first, paid-ready)"
+        },
+        {
+          "sha": "6b0a5b854717",
+          "subject": "Merge pull request #62 from StevenG3/codex/olympus-41b-real-universe"
+        },
+        {
+          "sha": "fc8630d62fc8",
+          "subject": "Merge pull request #61 from StevenG3/codex/olympus-42b-polymarket-onchain"
+        },
+        {
+          "sha": "6e2b16f45344",
+          "subject": "Merge pull request #60 from StevenG3/codex/core-02b-orchestrator-routers"
+        },
+        {
+          "sha": "d5129b857ed6",
+          "subject": "Merge pull request #59 from StevenG3/codex/core-04-live-readiness-gates"
+        },
         {
           "sha": "b1040af510d5",
           "subject": "Merge pull request #56 from StevenG3/codex/core-02a-orchestrator-boundaries"
@@ -137,9 +157,9 @@
       ],
       "language_distribution": [
         {
-          "files": 77,
+          "files": 96,
           "language": "Python",
-          "loc": 38176
+          "loc": 39926
         },
         {
           "files": 9,
@@ -147,14 +167,14 @@
           "loc": 988
         },
         {
+          "files": 10,
+          "language": "JSON",
+          "loc": 362
+        },
+        {
           "files": 4,
           "language": "YAML",
           "loc": 346
-        },
-        {
-          "files": 8,
-          "language": "JSON",
-          "loc": 323
         },
         {
           "files": 5,
@@ -175,473 +195,8 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 58,
-        "items": [
-          {
-            "merged": true,
-            "number": 58,
-            "review_url": "https://github.com/StevenG3/aegis/pull/58/files",
-            "state": "MERGED",
-            "title": "fix: include OKX earn loan balances",
-            "url": "https://github.com/StevenG3/aegis/pull/58"
-          },
-          {
-            "merged": true,
-            "number": 57,
-            "review_url": "https://github.com/StevenG3/aegis/pull/57/files",
-            "state": "MERGED",
-            "title": "Add Olympus survivor-light pipeline",
-            "url": "https://github.com/StevenG3/aegis/pull/57"
-          },
-          {
-            "merged": true,
-            "number": 56,
-            "review_url": "https://github.com/StevenG3/aegis/pull/56/files",
-            "state": "MERGED",
-            "title": "CORE 02A: prepare orchestrator dependency boundaries",
-            "url": "https://github.com/StevenG3/aegis/pull/56"
-          },
-          {
-            "merged": true,
-            "number": 55,
-            "review_url": "https://github.com/StevenG3/aegis/pull/55/files",
-            "state": "MERGED",
-            "title": "CORE 03: tighten confirmation token validation",
-            "url": "https://github.com/StevenG3/aegis/pull/55"
-          },
-          {
-            "merged": true,
-            "number": 54,
-            "review_url": "https://github.com/StevenG3/aegis/pull/54/files",
-            "state": "MERGED",
-            "title": "Expand OKX earn staking balance aggregation",
-            "url": "https://github.com/StevenG3/aegis/pull/54"
-          },
-          {
-            "merged": true,
-            "number": 53,
-            "review_url": "https://github.com/StevenG3/aegis/pull/53/files",
-            "state": "MERGED",
-            "title": "Expand exchange Earn balance aggregation",
-            "url": "https://github.com/StevenG3/aegis/pull/53"
-          },
-          {
-            "merged": true,
-            "number": 52,
-            "review_url": "https://github.com/StevenG3/aegis/pull/52/files",
-            "state": "MERGED",
-            "title": "Add adversarial risk and execution safety tests",
-            "url": "https://github.com/StevenG3/aegis/pull/52"
-          },
-          {
-            "merged": true,
-            "number": 51,
-            "review_url": "https://github.com/StevenG3/aegis/pull/51/files",
-            "state": "MERGED",
-            "title": "Harden EDGAR PIT metadata and factor computability map",
-            "url": "https://github.com/StevenG3/aegis/pull/51"
-          },
-          {
-            "merged": true,
-            "number": 50,
-            "review_url": "https://github.com/StevenG3/aegis/pull/50/files",
-            "state": "MERGED",
-            "title": "Add RSI autotune walk-forward falsification",
-            "url": "https://github.com/StevenG3/aegis/pull/50"
-          },
-          {
-            "merged": true,
-            "number": 49,
-            "review_url": "https://github.com/StevenG3/aegis/pull/49/files",
-            "state": "MERGED",
-            "title": "Add EDGAR derived concepts and CIK continuity coverage",
-            "url": "https://github.com/StevenG3/aegis/pull/49"
-          },
-          {
-            "merged": true,
-            "number": 48,
-            "review_url": "https://github.com/StevenG3/aegis/pull/48/files",
-            "state": "MERGED",
-            "title": "Harden public boundary and add Chinese README",
-            "url": "https://github.com/StevenG3/aegis/pull/48"
-          },
-          {
-            "merged": true,
-            "number": 47,
-            "review_url": "https://github.com/StevenG3/aegis/pull/47/files",
-            "state": "MERGED",
-            "title": "Add EDGAR PIT fundamentals primitives",
-            "url": "https://github.com/StevenG3/aegis/pull/47"
-          },
-          {
-            "merged": true,
-            "number": 46,
-            "review_url": "https://github.com/StevenG3/aegis/pull/46/files",
-            "state": "MERGED",
-            "title": "[codex] Align Olympus evidence output path",
-            "url": "https://github.com/StevenG3/aegis/pull/46"
-          },
-          {
-            "merged": true,
-            "number": 45,
-            "review_url": "https://github.com/StevenG3/aegis/pull/45/files",
-            "state": "MERGED",
-            "title": "[codex] Document value factor data gate",
-            "url": "https://github.com/StevenG3/aegis/pull/45"
-          },
-          {
-            "merged": true,
-            "number": 44,
-            "review_url": "https://github.com/StevenG3/aegis/pull/44/files",
-            "state": "MERGED",
-            "title": "[codex] Document Olympus route closure",
-            "url": "https://github.com/StevenG3/aegis/pull/44"
-          },
-          {
-            "merged": true,
-            "number": 43,
-            "review_url": "https://github.com/StevenG3/aegis/pull/43/files",
-            "state": "MERGED",
-            "title": "Complete Olympus 31 research discipline metrics",
-            "url": "https://github.com/StevenG3/aegis/pull/43"
-          },
-          {
-            "merged": true,
-            "number": 42,
-            "review_url": "https://github.com/StevenG3/aegis/pull/42/files",
-            "state": "MERGED",
-            "title": "Add Olympus 31 reposition status-quo validation",
-            "url": "https://github.com/StevenG3/aegis/pull/42"
-          },
-          {
-            "merged": true,
-            "number": 41,
-            "review_url": "https://github.com/StevenG3/aegis/pull/41/files",
-            "state": "MERGED",
-            "title": "Add Olympus 30 equal-weight allocation validation",
-            "url": "https://github.com/StevenG3/aegis/pull/41"
-          },
-          {
-            "merged": true,
-            "number": 40,
-            "review_url": "https://github.com/StevenG3/aegis/pull/40/files",
-            "state": "MERGED",
-            "title": "[codex] document olympus29 prompt scorecard",
-            "url": "https://github.com/StevenG3/aegis/pull/40"
-          },
-          {
-            "merged": true,
-            "number": 39,
-            "review_url": "https://github.com/StevenG3/aegis/pull/39/files",
-            "state": "MERGED",
-            "title": "[codex] olympus29 diversified risk allocation",
-            "url": "https://github.com/StevenG3/aegis/pull/39"
-          },
-          {
-            "merged": true,
-            "number": 38,
-            "review_url": "https://github.com/StevenG3/aegis/pull/38/files",
-            "state": "MERGED",
-            "title": "[codex] Add Olympus pure risk allocation candidate",
-            "url": "https://github.com/StevenG3/aegis/pull/38"
-          },
-          {
-            "merged": true,
-            "number": 37,
-            "review_url": "https://github.com/StevenG3/aegis/pull/37/files",
-            "state": "MERGED",
-            "title": "[codex] Add Olympus risk configuration candidate",
-            "url": "https://github.com/StevenG3/aegis/pull/37"
-          },
-          {
-            "merged": true,
-            "number": 36,
-            "review_url": "https://github.com/StevenG3/aegis/pull/36/files",
-            "state": "MERGED",
-            "title": "[codex] Add orderflow data availability probe",
-            "url": "https://github.com/StevenG3/aegis/pull/36"
-          },
-          {
-            "merged": true,
-            "number": 35,
-            "review_url": "https://github.com/StevenG3/aegis/pull/35/files",
-            "state": "MERGED",
-            "title": "[codex] Add walk-forward overfit checks",
-            "url": "https://github.com/StevenG3/aegis/pull/35"
-          },
-          {
-            "merged": true,
-            "number": 34,
-            "review_url": "https://github.com/StevenG3/aegis/pull/34/files",
-            "state": "MERGED",
-            "title": "[codex] Add factor IC evaluation",
-            "url": "https://github.com/StevenG3/aegis/pull/34"
-          },
-          {
-            "merged": true,
-            "number": 33,
-            "review_url": "https://github.com/StevenG3/aegis/pull/33/files",
-            "state": "MERGED",
-            "title": "Add TradingAgents edge evaluation report",
-            "url": "https://github.com/StevenG3/aegis/pull/33"
-          },
-          {
-            "merged": true,
-            "number": 32,
-            "review_url": "https://github.com/StevenG3/aegis/pull/32/files",
-            "state": "MERGED",
-            "title": "Add funding arb evidence runner",
-            "url": "https://github.com/StevenG3/aegis/pull/32"
-          },
-          {
-            "merged": true,
-            "number": 31,
-            "review_url": "https://github.com/StevenG3/aegis/pull/31/files",
-            "state": "MERGED",
-            "title": "Add funding arb backtest candidate support",
-            "url": "https://github.com/StevenG3/aegis/pull/31"
-          },
-          {
-            "merged": true,
-            "number": 30,
-            "review_url": "https://github.com/StevenG3/aegis/pull/30/files",
-            "state": "MERGED",
-            "title": "[codex] Add paper bootstrap autonomy safeguards",
-            "url": "https://github.com/StevenG3/aegis/pull/30"
-          },
-          {
-            "merged": true,
-            "number": 29,
-            "review_url": "https://github.com/StevenG3/aegis/pull/29/files",
-            "state": "MERGED",
-            "title": "[codex] Add bootstrap transparency and run controls",
-            "url": "https://github.com/StevenG3/aegis/pull/29"
-          },
-          {
-            "merged": true,
-            "number": 28,
-            "review_url": "https://github.com/StevenG3/aegis/pull/28/files",
-            "state": "MERGED",
-            "title": "[codex] Fix paper feedback data starvation",
-            "url": "https://github.com/StevenG3/aegis/pull/28"
-          },
-          {
-            "merged": true,
-            "number": 27,
-            "review_url": "https://github.com/StevenG3/aegis/pull/27/files",
-            "state": "MERGED",
-            "title": "Add auditable memory write path",
-            "url": "https://github.com/StevenG3/aegis/pull/27"
-          },
-          {
-            "merged": true,
-            "number": 26,
-            "review_url": "https://github.com/StevenG3/aegis/pull/26/files",
-            "state": "MERGED",
-            "title": "[codex] Add review integrity working rules",
-            "url": "https://github.com/StevenG3/aegis/pull/26"
-          },
-          {
-            "merged": true,
-            "number": 25,
-            "review_url": "https://github.com/StevenG3/aegis/pull/25/files",
-            "state": "MERGED",
-            "title": "Add auditable memory recall layer",
-            "url": "https://github.com/StevenG3/aegis/pull/25"
-          },
-          {
-            "merged": true,
-            "number": 24,
-            "review_url": "https://github.com/StevenG3/aegis/pull/24/files",
-            "state": "MERGED",
-            "title": "Add EV shadow observability",
-            "url": "https://github.com/StevenG3/aegis/pull/24"
-          },
-          {
-            "merged": true,
-            "number": 23,
-            "review_url": "https://github.com/StevenG3/aegis/pull/23/files",
-            "state": "MERGED",
-            "title": "[codex] Calibrate from closed paper outcomes",
-            "url": "https://github.com/StevenG3/aegis/pull/23"
-          },
-          {
-            "merged": true,
-            "number": 22,
-            "review_url": "https://github.com/StevenG3/aegis/pull/22/files",
-            "state": "MERGED",
-            "title": "Wire EV shadow into paper scorecard trades",
-            "url": "https://github.com/StevenG3/aegis/pull/22"
-          },
-          {
-            "merged": true,
-            "number": 21,
-            "review_url": "https://github.com/StevenG3/aegis/pull/21/files",
-            "state": "MERGED",
-            "title": "Add latest competition leaderboard endpoint",
-            "url": "https://github.com/StevenG3/aegis/pull/21"
-          },
-          {
-            "merged": true,
-            "number": 20,
-            "review_url": "https://github.com/StevenG3/aegis/pull/20/files",
-            "state": "MERGED",
-            "title": "Add strategy healthcheck gate",
-            "url": "https://github.com/StevenG3/aegis/pull/20"
-          },
-          {
-            "merged": true,
-            "number": 19,
-            "review_url": "https://github.com/StevenG3/aegis/pull/19/files",
-            "state": "MERGED",
-            "title": "fix: allow initial IBKR reconnect attempt",
-            "url": "https://github.com/StevenG3/aegis/pull/19"
-          },
-          {
-            "merged": true,
-            "number": 18,
-            "review_url": "https://github.com/StevenG3/aegis/pull/18/files",
-            "state": "MERGED",
-            "title": "feat: add EV gate and factor attribution",
-            "url": "https://github.com/StevenG3/aegis/pull/18"
-          },
-          {
-            "merged": true,
-            "number": 17,
-            "review_url": "https://github.com/StevenG3/aegis/pull/17/files",
-            "state": "MERGED",
-            "title": "fix: select requested yfinance ticker columns",
-            "url": "https://github.com/StevenG3/aegis/pull/17"
-          },
-          {
-            "merged": true,
-            "number": 16,
-            "review_url": "https://github.com/StevenG3/aegis/pull/16/files",
-            "state": "MERGED",
-            "title": "fix: allow string strategy parameters",
-            "url": "https://github.com/StevenG3/aegis/pull/16"
-          },
-          {
-            "merged": true,
-            "number": 15,
-            "review_url": "https://github.com/StevenG3/aegis/pull/15/files",
-            "state": "MERGED",
-            "title": "fix: make backtest open-position stats explicit",
-            "url": "https://github.com/StevenG3/aegis/pull/15"
-          },
-          {
-            "merged": true,
-            "number": 14,
-            "review_url": "https://github.com/StevenG3/aegis/pull/14/files",
-            "state": "MERGED",
-            "title": "fix: classify active backtest exits as signal",
-            "url": "https://github.com/StevenG3/aegis/pull/14"
-          },
-          {
-            "merged": true,
-            "number": 13,
-            "review_url": "https://github.com/StevenG3/aegis/pull/13/files",
-            "state": "MERGED",
-            "title": "fix: report entry regime from backtest data",
-            "url": "https://github.com/StevenG3/aegis/pull/13"
-          },
-          {
-            "merged": true,
-            "number": 12,
-            "review_url": "https://github.com/StevenG3/aegis/pull/12/files",
-            "state": "MERGED",
-            "title": "feat: add backtest exit reasons and regime data",
-            "url": "https://github.com/StevenG3/aegis/pull/12"
-          },
-          {
-            "merged": true,
-            "number": 11,
-            "review_url": "https://github.com/StevenG3/aegis/pull/11/files",
-            "state": "MERGED",
-            "title": "feat: add backtest strategy plugin loader",
-            "url": "https://github.com/StevenG3/aegis/pull/11"
-          },
-          {
-            "merged": true,
-            "number": 10,
-            "review_url": "https://github.com/StevenG3/aegis/pull/10/files",
-            "state": "MERGED",
-            "title": "docs: add system overview and redact actor example",
-            "url": "https://github.com/StevenG3/aegis/pull/10"
-          },
-          {
-            "merged": true,
-            "number": 9,
-            "review_url": "https://github.com/StevenG3/aegis/pull/9/files",
-            "state": "MERGED",
-            "title": "ops: add restart policy for resiliency",
-            "url": "https://github.com/StevenG3/aegis/pull/9"
-          },
-          {
-            "merged": true,
-            "number": 8,
-            "review_url": "https://github.com/StevenG3/aegis/pull/8/files",
-            "state": "MERGED",
-            "title": "Fix Bybit balance aggregation",
-            "url": "https://github.com/StevenG3/aegis/pull/8"
-          },
-          {
-            "merged": true,
-            "number": 7,
-            "review_url": "https://github.com/StevenG3/aegis/pull/7/files",
-            "state": "MERGED",
-            "title": "Require confirmation for live orders",
-            "url": "https://github.com/StevenG3/aegis/pull/7"
-          },
-          {
-            "merged": true,
-            "number": 6,
-            "review_url": "https://github.com/StevenG3/aegis/pull/6/files",
-            "state": "MERGED",
-            "title": "Add backtest service",
-            "url": "https://github.com/StevenG3/aegis/pull/6"
-          },
-          {
-            "merged": true,
-            "number": 5,
-            "review_url": "https://github.com/StevenG3/aegis/pull/5/files",
-            "state": "MERGED",
-            "title": "Add exchange bridge balance service",
-            "url": "https://github.com/StevenG3/aegis/pull/5"
-          },
-          {
-            "merged": true,
-            "number": 4,
-            "review_url": "https://github.com/StevenG3/aegis/pull/4/files",
-            "state": "MERGED",
-            "title": "feat: [hermes-aegis] Phase 25 — Operator-gated auto-correction (atelier#3)",
-            "url": "https://github.com/StevenG3/aegis/pull/4"
-          },
-          {
-            "merged": true,
-            "number": 3,
-            "review_url": "https://github.com/StevenG3/aegis/pull/3/files",
-            "state": "MERGED",
-            "title": "feat: [hermes-aegis] Phase 24 — Streaming IBKR account updates (atelier#1)",
-            "url": "https://github.com/StevenG3/aegis/pull/3"
-          },
-          {
-            "merged": true,
-            "number": 2,
-            "review_url": "https://github.com/StevenG3/aegis/pull/2/files",
-            "state": "MERGED",
-            "title": "ci: add GitHub Actions (ruff + pytest)",
-            "url": "https://github.com/StevenG3/aegis/pull/2"
-          },
-          {
-            "merged": true,
-            "number": 1,
-            "review_url": "https://github.com/StevenG3/aegis/pull/1/files",
-            "state": "MERGED",
-            "title": "feat: Phase 23 — IBKR portfolio reconciliation (read-only)",
-            "url": "https://github.com/StevenG3/aegis/pull/1"
-          }
-        ]
+        "count": 0,
+        "items": []
       },
       "timeline": {
         "daily": [
@@ -692,6 +247,14 @@
           {
             "commits": 13,
             "date": "2026-06-07"
+          },
+          {
+            "commits": 8,
+            "date": "2026-06-10"
+          },
+          {
+            "commits": 2,
+            "date": "2026-06-11"
           }
         ],
         "weekly": [
@@ -702,6 +265,10 @@
           {
             "commits": 80,
             "week": "2026-W23"
+          },
+          {
+            "commits": 10,
+            "week": "2026-W24"
           }
         ]
       },
@@ -934,14 +501,14 @@
     },
     {
       "aggregate": {
-        "active_days": 9,
+        "active_days": 10,
         "ai_marked_commits": 0,
-        "commits": 19,
-        "deletions": 731,
+        "commits": 20,
+        "deletions": 755,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 3144,
-        "last_commit_date": "2026-06-09T03:17:10+09:00",
-        "net_lines": 2413,
+        "insertions": 3172,
+        "last_commit_date": "2026-06-10T03:17:10+09:00",
+        "net_lines": 2417,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -950,7 +517,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 1072
+          "loc": 1076
         },
         {
           "files": 4,
@@ -1028,6 +595,10 @@
           {
             "commits": 1,
             "date": "2026-06-09"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-10"
           }
         ],
         "weekly": [
@@ -1036,7 +607,7 @@
             "week": "2026-W23"
           },
           {
-            "commits": 2,
+            "commits": 3,
             "week": "2026-W24"
           }
         ]
@@ -1046,16 +617,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 14,
-    "ai_marked_commits": 114,
+    "active_days_public_timeline": 16,
+    "ai_marked_commits": 119,
     "codex_prompt_tasks": 65,
-    "net_lines": 124324,
+    "net_lines": 168117,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 342,
-    "total_deletions": 23448,
-    "total_insertions": 147772
+    "total_commits": 353,
+    "total_deletions": 29898,
+    "total_insertions": 198015
   },
   "timeline": {
     "weekly_public": [
@@ -1068,7 +639,7 @@
         "week": "2026-W23"
       },
       {
-        "commits": 2,
+        "commits": 13,
         "week": "2026-W24"
       }
     ]
