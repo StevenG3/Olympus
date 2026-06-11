@@ -1,20 +1,15 @@
 {
-  "generated_at": "2026-06-10T18:17:10.282315+00:00",
+  "generated_at": "2026-06-11T18:17:10.295044+00:00",
   "language_distribution_public": [
     {
-      "files": 96,
+      "files": 102,
       "language": "Python",
-      "loc": 39926
+      "loc": 42313
     },
     {
       "files": 25,
       "language": "Markdown",
       "loc": 2619
-    },
-    {
-      "files": 11,
-      "language": "JSON",
-      "loc": 1438
     },
     {
       "files": 16,
@@ -27,6 +22,11 @@
       "loc": 1271
     },
     {
+      "files": 14,
+      "language": "JSON",
+      "loc": 1086
+    },
+    {
       "files": 2,
       "language": "HTML",
       "loc": 848
@@ -34,7 +34,7 @@
     {
       "files": 14,
       "language": "YAML",
-      "loc": 776
+      "loc": 779
     },
     {
       "files": 5,
@@ -87,17 +87,25 @@
     {
       "aggregate": {
         "active_days": 14,
-        "ai_marked_commits": 14,
-        "commits": 157,
-        "deletions": 26860,
+        "ai_marked_commits": 16,
+        "commits": 165,
+        "deletions": 26914,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 133473,
-        "last_commit_date": "2026-06-11T01:20:03+09:00",
-        "net_lines": 106613,
-        "pr_count": 0,
-        "tracked_files": 136
+        "insertions": 137014,
+        "last_commit_date": "2026-06-11T21:57:01+08:00",
+        "net_lines": 110100,
+        "pr_count": 4,
+        "tracked_files": 145
       },
       "ai_marked_samples": [
+        {
+          "sha": "1ade1de96422",
+          "subject": "Merge pull request #2 from StevenG3/codex/olympus-42d-polymarket-tailaware-backtest"
+        },
+        {
+          "sha": "19ec380bc4a2",
+          "subject": "Merge pull request #1 from StevenG3/codex/olympus-42c-polymarket-survivor-power"
+        },
         {
           "sha": "00fe9bbbbd86",
           "subject": "Implement Sharadar delisting-aware price adapter (free-first, paid-ready)"
@@ -157,9 +165,9 @@
       ],
       "language_distribution": [
         {
-          "files": 96,
+          "files": 102,
           "language": "Python",
-          "loc": 39926
+          "loc": 42313
         },
         {
           "files": 9,
@@ -167,14 +175,14 @@
           "loc": 988
         },
         {
-          "files": 10,
+          "files": 13,
           "language": "JSON",
-          "loc": 362
+          "loc": 439
         },
         {
           "files": 4,
           "language": "YAML",
-          "loc": 346
+          "loc": 349
         },
         {
           "files": 5,
@@ -195,8 +203,41 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 0,
-        "items": []
+        "count": 4,
+        "items": [
+          {
+            "merged": true,
+            "number": 4,
+            "review_url": "https://github.com/StevenG3/aegis/pull/4/files",
+            "state": "MERGED",
+            "title": "Add Polymarket structural scan",
+            "url": "https://github.com/StevenG3/aegis/pull/4"
+          },
+          {
+            "merged": true,
+            "number": 3,
+            "review_url": "https://github.com/StevenG3/aegis/pull/3/files",
+            "state": "MERGED",
+            "title": "Operationalize paper autonomy monitoring",
+            "url": "https://github.com/StevenG3/aegis/pull/3"
+          },
+          {
+            "merged": true,
+            "number": 2,
+            "review_url": "https://github.com/StevenG3/aegis/pull/2/files",
+            "state": "MERGED",
+            "title": "[codex] Add Polymarket tail-aware backtest",
+            "url": "https://github.com/StevenG3/aegis/pull/2"
+          },
+          {
+            "merged": true,
+            "number": 1,
+            "review_url": "https://github.com/StevenG3/aegis/pull/1/files",
+            "state": "MERGED",
+            "title": "Add Polymarket survivor power probe",
+            "url": "https://github.com/StevenG3/aegis/pull/1"
+          }
+        ]
       },
       "timeline": {
         "daily": [
@@ -253,7 +294,7 @@
             "date": "2026-06-10"
           },
           {
-            "commits": 2,
+            "commits": 10,
             "date": "2026-06-11"
           }
         ],
@@ -267,7 +308,7 @@
             "week": "2026-W23"
           },
           {
-            "commits": 10,
+            "commits": 18,
             "week": "2026-W24"
           }
         ]
@@ -501,28 +542,28 @@
     },
     {
       "aggregate": {
-        "active_days": 10,
+        "active_days": 11,
         "ai_marked_commits": 0,
-        "commits": 20,
-        "deletions": 755,
+        "commits": 21,
+        "deletions": 1258,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 3172,
-        "last_commit_date": "2026-06-10T03:17:10+09:00",
-        "net_lines": 2417,
+        "insertions": 3246,
+        "last_commit_date": "2026-06-11T03:17:10+09:00",
+        "net_lines": 1988,
         "pr_count": 2,
         "tracked_files": 7
       },
       "ai_marked_samples": [],
       "language_distribution": [
         {
-          "files": 1,
-          "language": "JSON",
-          "loc": 1076
-        },
-        {
           "files": 4,
           "language": "Markdown",
           "loc": 805
+        },
+        {
+          "files": 1,
+          "language": "JSON",
+          "loc": 647
         },
         {
           "files": 1,
@@ -599,6 +640,10 @@
           {
             "commits": 1,
             "date": "2026-06-10"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-11"
           }
         ],
         "weekly": [
@@ -607,7 +652,7 @@
             "week": "2026-W23"
           },
           {
-            "commits": 3,
+            "commits": 4,
             "week": "2026-W24"
           }
         ]
@@ -618,15 +663,15 @@
   "schema_version": 1,
   "summary": {
     "active_days_public_timeline": 16,
-    "ai_marked_commits": 119,
+    "ai_marked_commits": 121,
     "codex_prompt_tasks": 65,
-    "net_lines": 168117,
+    "net_lines": 171175,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 353,
-    "total_deletions": 29898,
-    "total_insertions": 198015
+    "total_commits": 362,
+    "total_deletions": 30455,
+    "total_insertions": 201630
   },
   "timeline": {
     "weekly_public": [
@@ -639,7 +684,7 @@
         "week": "2026-W23"
       },
       {
-        "commits": 13,
+        "commits": 22,
         "week": "2026-W24"
       }
     ]
