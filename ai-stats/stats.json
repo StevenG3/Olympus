@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-11T18:17:10.295044+00:00",
+  "generated_at": "2026-06-12T18:17:09.722494+00:00",
   "language_distribution_public": [
     {
-      "files": 102,
+      "files": 105,
       "language": "Python",
-      "loc": 42313
+      "loc": 43286
     },
     {
       "files": 25,
@@ -22,9 +22,9 @@
       "loc": 1271
     },
     {
-      "files": 14,
+      "files": 15,
       "language": "JSON",
-      "loc": 1086
+      "loc": 1166
     },
     {
       "files": 2,
@@ -86,16 +86,16 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 14,
+        "active_days": 15,
         "ai_marked_commits": 16,
-        "commits": 165,
+        "commits": 167,
         "deletions": 26914,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 137014,
-        "last_commit_date": "2026-06-11T21:57:01+08:00",
-        "net_lines": 110100,
-        "pr_count": 4,
-        "tracked_files": 145
+        "insertions": 139030,
+        "last_commit_date": "2026-06-12T08:55:21+08:00",
+        "net_lines": 112116,
+        "pr_count": 5,
+        "tracked_files": 149
       },
       "ai_marked_samples": [
         {
@@ -165,9 +165,9 @@
       ],
       "language_distribution": [
         {
-          "files": 102,
+          "files": 105,
           "language": "Python",
-          "loc": 42313
+          "loc": 43286
         },
         {
           "files": 9,
@@ -175,9 +175,9 @@
           "loc": 988
         },
         {
-          "files": 13,
+          "files": 14,
           "language": "JSON",
-          "loc": 439
+          "loc": 474
         },
         {
           "files": 4,
@@ -203,8 +203,16 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 4,
+        "count": 5,
         "items": [
+          {
+            "merged": true,
+            "number": 5,
+            "review_url": "https://github.com/StevenG3/aegis/pull/5/files",
+            "state": "MERGED",
+            "title": "Add crypto TSMOM walk-forward study",
+            "url": "https://github.com/StevenG3/aegis/pull/5"
+          },
           {
             "merged": true,
             "number": 4,
@@ -296,6 +304,10 @@
           {
             "commits": 10,
             "date": "2026-06-11"
+          },
+          {
+            "commits": 2,
+            "date": "2026-06-12"
           }
         ],
         "weekly": [
@@ -308,7 +320,7 @@
             "week": "2026-W23"
           },
           {
-            "commits": 18,
+            "commits": 20,
             "week": "2026-W24"
           }
         ]
@@ -542,14 +554,14 @@
     },
     {
       "aggregate": {
-        "active_days": 11,
+        "active_days": 12,
         "ai_marked_commits": 0,
-        "commits": 21,
-        "deletions": 1258,
+        "commits": 22,
+        "deletions": 1302,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 3246,
-        "last_commit_date": "2026-06-11T03:17:10+09:00",
-        "net_lines": 1988,
+        "insertions": 3335,
+        "last_commit_date": "2026-06-12T03:17:10+09:00",
+        "net_lines": 2033,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -563,7 +575,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 647
+          "loc": 692
         },
         {
           "files": 1,
@@ -644,6 +656,10 @@
           {
             "commits": 1,
             "date": "2026-06-11"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-12"
           }
         ],
         "weekly": [
@@ -652,7 +668,7 @@
             "week": "2026-W23"
           },
           {
-            "commits": 4,
+            "commits": 5,
             "week": "2026-W24"
           }
         ]
@@ -662,16 +678,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 16,
+    "active_days_public_timeline": 17,
     "ai_marked_commits": 121,
     "codex_prompt_tasks": 65,
-    "net_lines": 171175,
+    "net_lines": 173236,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 362,
-    "total_deletions": 30455,
-    "total_insertions": 201630
+    "total_commits": 365,
+    "total_deletions": 30499,
+    "total_insertions": 203735
   },
   "timeline": {
     "weekly_public": [
@@ -684,7 +700,7 @@
         "week": "2026-W23"
       },
       {
-        "commits": 22,
+        "commits": 25,
         "week": "2026-W24"
       }
     ]
