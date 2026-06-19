@@ -1,15 +1,20 @@
 {
-  "generated_at": "2026-06-18T18:17:10.434369+00:00",
+  "generated_at": "2026-06-19T18:17:09.564148+00:00",
   "language_distribution_public": [
     {
-      "files": 108,
+      "files": 121,
       "language": "Python",
-      "loc": 44929
+      "loc": 51583
     },
     {
       "files": 25,
       "language": "Markdown",
       "loc": 2619
+    },
+    {
+      "files": 23,
+      "language": "JSON",
+      "loc": 1489
     },
     {
       "files": 16,
@@ -22,11 +27,6 @@
       "loc": 1271
     },
     {
-      "files": 16,
-      "language": "JSON",
-      "loc": 1229
-    },
-    {
       "files": 2,
       "language": "HTML",
       "loc": 848
@@ -34,7 +34,7 @@
     {
       "files": 14,
       "language": "YAML",
-      "loc": 779
+      "loc": 776
     },
     {
       "files": 5,
@@ -86,16 +86,16 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 16,
-        "ai_marked_commits": 16,
-        "commits": 172,
-        "deletions": 26916,
+        "active_days": 14,
+        "ai_marked_commits": 6,
+        "commits": 97,
+        "deletions": 3473,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 146320,
-        "last_commit_date": "2026-06-18T21:38:04+09:00",
-        "net_lines": 119404,
-        "pr_count": 8,
-        "tracked_files": 153
+        "insertions": 92621,
+        "last_commit_date": "2026-06-20T00:22:08+08:00",
+        "net_lines": 89148,
+        "pr_count": 19,
+        "tracked_files": 173
       },
       "ai_marked_samples": [
         {
@@ -107,52 +107,12 @@
           "subject": "Merge pull request #1 from StevenG3/codex/olympus-42c-polymarket-survivor-power"
         },
         {
-          "sha": "00fe9bbbbd86",
-          "subject": "Implement Sharadar delisting-aware price adapter (free-first, paid-ready)"
-        },
-        {
-          "sha": "6b0a5b854717",
-          "subject": "Merge pull request #62 from StevenG3/codex/olympus-41b-real-universe"
-        },
-        {
-          "sha": "fc8630d62fc8",
-          "subject": "Merge pull request #61 from StevenG3/codex/olympus-42b-polymarket-onchain"
-        },
-        {
-          "sha": "6e2b16f45344",
-          "subject": "Merge pull request #60 from StevenG3/codex/core-02b-orchestrator-routers"
-        },
-        {
-          "sha": "d5129b857ed6",
-          "subject": "Merge pull request #59 from StevenG3/codex/core-04-live-readiness-gates"
-        },
-        {
-          "sha": "b1040af510d5",
-          "subject": "Merge pull request #56 from StevenG3/codex/core-02a-orchestrator-boundaries"
-        },
-        {
-          "sha": "85f1242bca2e",
-          "subject": "Merge pull request #55 from StevenG3/codex/core-03-token-gaps"
-        },
-        {
           "sha": "df5e60a33662",
           "subject": "Merge pull request #20 from StevenG3/codex/strategy-healthcheck-gate"
         },
         {
-          "sha": "96056d49b6ec",
-          "subject": "feat: implement StevenG3/atelier#3 — [hermes-aegis] Phase 25 — Operator-gated auto-correction"
-        },
-        {
-          "sha": "453b463caf53",
-          "subject": "feat: implement StevenG3/atelier#1 — [hermes-aegis] Phase 24 — Streaming IBKR account updates"
-        },
-        {
           "sha": "73ee80befca6",
           "subject": "ci: add GitHub Actions (ruff + pytest) (#2)"
-        },
-        {
-          "sha": "1ee66eed62e6",
-          "subject": "ci: add GitHub Actions (ruff + pytest)"
         },
         {
           "sha": "b84a638309a1",
@@ -165,9 +125,9 @@
       ],
       "language_distribution": [
         {
-          "files": 108,
+          "files": 121,
           "language": "Python",
-          "loc": 44929
+          "loc": 51583
         },
         {
           "files": 9,
@@ -175,14 +135,14 @@
           "loc": 988
         },
         {
-          "files": 15,
+          "files": 22,
           "language": "JSON",
-          "loc": 493
+          "loc": 717
         },
         {
           "files": 4,
           "language": "YAML",
-          "loc": 349
+          "loc": 346
         },
         {
           "files": 5,
@@ -203,8 +163,96 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 8,
+        "count": 19,
         "items": [
+          {
+            "merged": true,
+            "number": 19,
+            "review_url": "https://github.com/StevenG3/aegis/pull/19/files",
+            "state": "MERGED",
+            "title": "[codex] Avoid blocking IBKR snapshot market data",
+            "url": "https://github.com/StevenG3/aegis/pull/19"
+          },
+          {
+            "merged": true,
+            "number": 18,
+            "review_url": "https://github.com/StevenG3/aegis/pull/18/files",
+            "state": "MERGED",
+            "title": "[codex] Bound IBKR snapshot blocking calls",
+            "url": "https://github.com/StevenG3/aegis/pull/18"
+          },
+          {
+            "merged": true,
+            "number": 17,
+            "review_url": "https://github.com/StevenG3/aegis/pull/17/files",
+            "state": "MERGED",
+            "title": "[codex] Fix IBKR snapshot worker event loop",
+            "url": "https://github.com/StevenG3/aegis/pull/17"
+          },
+          {
+            "merged": true,
+            "number": 16,
+            "review_url": "https://github.com/StevenG3/aegis/pull/16/files",
+            "state": "MERGED",
+            "title": "[codex] Restore full IBKR bridge snapshot",
+            "url": "https://github.com/StevenG3/aegis/pull/16"
+          },
+          {
+            "merged": true,
+            "number": 15,
+            "review_url": "https://github.com/StevenG3/aegis/pull/15/files",
+            "state": "MERGED",
+            "title": "Harden Olympus evidence hygiene",
+            "url": "https://github.com/StevenG3/aegis/pull/15"
+          },
+          {
+            "merged": true,
+            "number": 14,
+            "review_url": "https://github.com/StevenG3/aegis/pull/14/files",
+            "state": "MERGED",
+            "title": "Add Olympus 49B definitive price action reevaluation",
+            "url": "https://github.com/StevenG3/aegis/pull/14"
+          },
+          {
+            "merged": true,
+            "number": 13,
+            "review_url": "https://github.com/StevenG3/aegis/pull/13/files",
+            "state": "MERGED",
+            "title": "Evaluate TradingAgents recommendation edge",
+            "url": "https://github.com/StevenG3/aegis/pull/13"
+          },
+          {
+            "merged": true,
+            "number": 12,
+            "review_url": "https://github.com/StevenG3/aegis/pull/12/files",
+            "state": "MERGED",
+            "title": "Implement funding arb research gate",
+            "url": "https://github.com/StevenG3/aegis/pull/12"
+          },
+          {
+            "merged": true,
+            "number": 11,
+            "review_url": "https://github.com/StevenG3/aegis/pull/11/files",
+            "state": "MERGED",
+            "title": "[codex] Reevaluate BTC price action strategy",
+            "url": "https://github.com/StevenG3/aegis/pull/11"
+          },
+          {
+            "merged": true,
+            "number": 10,
+            "review_url": "https://github.com/StevenG3/aegis/pull/10/files",
+            "state": "MERGED",
+            "title": "[codex] Fix Olympus 47 risk improvement gate",
+            "url": "https://github.com/StevenG3/aegis/pull/10"
+          },
+          {
+            "merged": true,
+            "number": 9,
+            "review_url": "https://github.com/StevenG3/aegis/pull/9/files",
+            "state": "MERGED",
+            "title": "[codex] Add Olympus 48 free equity price sources",
+            "url": "https://github.com/StevenG3/aegis/pull/9"
+          },
           {
             "merged": true,
             "number": 8,
@@ -286,11 +334,11 @@
             "date": "2026-05-29"
           },
           {
-            "commits": 11,
+            "commits": 6,
             "date": "2026-05-30"
           },
           {
-            "commits": 33,
+            "commits": 18,
             "date": "2026-05-31"
           },
           {
@@ -298,61 +346,53 @@
             "date": "2026-06-01"
           },
           {
-            "commits": 6,
+            "commits": 3,
             "date": "2026-06-02"
           },
           {
-            "commits": 17,
+            "commits": 9,
             "date": "2026-06-03"
           },
           {
-            "commits": 3,
+            "commits": 1,
             "date": "2026-06-04"
           },
           {
-            "commits": 6,
-            "date": "2026-06-05"
-          },
-          {
-            "commits": 31,
-            "date": "2026-06-06"
-          },
-          {
-            "commits": 13,
-            "date": "2026-06-07"
-          },
-          {
-            "commits": 8,
-            "date": "2026-06-10"
-          },
-          {
-            "commits": 10,
+            "commits": 7,
             "date": "2026-06-11"
           },
           {
-            "commits": 2,
+            "commits": 1,
             "date": "2026-06-12"
           },
           {
-            "commits": 5,
+            "commits": 4,
             "date": "2026-06-18"
+          },
+          {
+            "commits": 14,
+            "date": "2026-06-19"
+          },
+          {
+            "commits": 7,
+            "date": "2026-06-20"
           }
         ],
         "weekly": [
           {
-            "commits": 67,
+            "commits": 47,
             "week": "2026-W22"
           },
           {
-            "commits": 80,
+            "commits": 17,
             "week": "2026-W23"
           },
           {
-            "commits": 20,
+            "commits": 8,
             "week": "2026-W24"
           },
           {
-            "commits": 5,
+            "commits": 25,
             "week": "2026-W25"
           }
         ]
@@ -586,14 +626,14 @@
     },
     {
       "aggregate": {
-        "active_days": 18,
+        "active_days": 19,
         "ai_marked_commits": 0,
-        "commits": 28,
-        "deletions": 1412,
+        "commits": 29,
+        "deletions": 1444,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 3489,
-        "last_commit_date": "2026-06-18T03:17:11+09:00",
-        "net_lines": 2077,
+        "insertions": 3557,
+        "last_commit_date": "2026-06-19T03:17:10+09:00",
+        "net_lines": 2113,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -607,7 +647,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 736
+          "loc": 772
         },
         {
           "files": 1,
@@ -716,6 +756,10 @@
           {
             "commits": 1,
             "date": "2026-06-18"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-19"
           }
         ],
         "weekly": [
@@ -728,7 +772,7 @@
             "week": "2026-W24"
           },
           {
-            "commits": 4,
+            "commits": 5,
             "week": "2026-W25"
           }
         ]
@@ -738,33 +782,33 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 23,
-    "ai_marked_commits": 121,
+    "active_days_public_timeline": 25,
+    "ai_marked_commits": 111,
     "codex_prompt_tasks": 65,
-    "net_lines": 180568,
+    "net_lines": 150348,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 376,
-    "total_deletions": 30611,
-    "total_insertions": 211179
+    "total_commits": 302,
+    "total_deletions": 7200,
+    "total_insertions": 157548
   },
   "timeline": {
     "weekly_public": [
       {
-        "commits": 95,
+        "commits": 75,
         "week": "2026-W22"
       },
       {
-        "commits": 97,
+        "commits": 34,
         "week": "2026-W23"
       },
       {
-        "commits": 27,
+        "commits": 15,
         "week": "2026-W24"
       },
       {
-        "commits": 9,
+        "commits": 30,
         "week": "2026-W25"
       }
     ]
