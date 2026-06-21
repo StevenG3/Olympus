@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-20T18:17:09.873902+00:00",
+  "generated_at": "2026-06-21T18:17:09.091490+00:00",
   "language_distribution_public": [
     {
-      "files": 139,
+      "files": 161,
       "language": "Python",
-      "loc": 59483
+      "loc": 69818
     },
     {
       "files": 26,
@@ -14,7 +14,7 @@
     {
       "files": 24,
       "language": "JSON",
-      "loc": 1767
+      "loc": 1891
     },
     {
       "files": 16,
@@ -39,7 +39,7 @@
     {
       "files": 5,
       "language": "TOML",
-      "loc": 199
+      "loc": 201
     },
     {
       "files": 9,
@@ -86,18 +86,22 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 15,
-        "ai_marked_commits": 11,
-        "commits": 121,
-        "deletions": 4989,
+        "active_days": 16,
+        "ai_marked_commits": 12,
+        "commits": 139,
+        "deletions": 5232,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 106181,
-        "last_commit_date": "2026-06-20T23:06:06+08:00",
-        "net_lines": 101192,
-        "pr_count": 31,
-        "tracked_files": 193
+        "insertions": 126542,
+        "last_commit_date": "2026-06-21T23:47:32+08:00",
+        "net_lines": 121310,
+        "pr_count": 40,
+        "tracked_files": 215
       },
       "ai_marked_samples": [
+        {
+          "sha": "425f5bb504dc",
+          "subject": "Merge pull request #34 from StevenG3/codex/olympus-65-microstructure-impulse-evidence"
+        },
         {
           "sha": "f3a8886b7425",
           "subject": "Merge pull request #30 from StevenG3/codex/olympus-61-polymarket-5m-firstpass"
@@ -145,9 +149,9 @@
       ],
       "language_distribution": [
         {
-          "files": 139,
+          "files": 161,
           "language": "Python",
-          "loc": 59483
+          "loc": 69818
         },
         {
           "files": 10,
@@ -167,7 +171,7 @@
         {
           "files": 5,
           "language": "TOML",
-          "loc": 199
+          "loc": 201
         },
         {
           "files": 3,
@@ -183,8 +187,80 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 31,
+        "count": 40,
         "items": [
+          {
+            "merged": true,
+            "number": 40,
+            "review_url": "https://github.com/StevenG3/aegis/pull/40/files",
+            "state": "MERGED",
+            "title": "Harden Olympus 70 breadth overlap and survivorship checks",
+            "url": "https://github.com/StevenG3/aegis/pull/40"
+          },
+          {
+            "merged": true,
+            "number": 39,
+            "review_url": "https://github.com/StevenG3/aegis/pull/39/files",
+            "state": "MERGED",
+            "title": "Add Olympus 70 market breadth research harness",
+            "url": "https://github.com/StevenG3/aegis/pull/39"
+          },
+          {
+            "merged": true,
+            "number": 38,
+            "review_url": "https://github.com/StevenG3/aegis/pull/38/files",
+            "state": "MERGED",
+            "title": "[codex] Add calibrated OOS gate",
+            "url": "https://github.com/StevenG3/aegis/pull/38"
+          },
+          {
+            "merged": true,
+            "number": 37,
+            "review_url": "https://github.com/StevenG3/aegis/pull/37/files",
+            "state": "MERGED",
+            "title": "[codex] Add vibecoding factor factory",
+            "url": "https://github.com/StevenG3/aegis/pull/37"
+          },
+          {
+            "merged": true,
+            "number": 36,
+            "review_url": "https://github.com/StevenG3/aegis/pull/36/files",
+            "state": "MERGED",
+            "title": "Add Olympus 68 Polymarket relative value calibration",
+            "url": "https://github.com/StevenG3/aegis/pull/36"
+          },
+          {
+            "merged": true,
+            "number": 35,
+            "review_url": "https://github.com/StevenG3/aegis/pull/35/files",
+            "state": "MERGED",
+            "title": "Add Olympus 67 crypto cross-sectional factor harness",
+            "url": "https://github.com/StevenG3/aegis/pull/35"
+          },
+          {
+            "merged": true,
+            "number": 34,
+            "review_url": "https://github.com/StevenG3/aegis/pull/34/files",
+            "state": "MERGED",
+            "title": "Add microstructure impulse evidence runner",
+            "url": "https://github.com/StevenG3/aegis/pull/34"
+          },
+          {
+            "merged": true,
+            "number": 33,
+            "review_url": "https://github.com/StevenG3/aegis/pull/33/files",
+            "state": "MERGED",
+            "title": "[codex] Speed up exchange bridge readiness probes",
+            "url": "https://github.com/StevenG3/aegis/pull/33"
+          },
+          {
+            "merged": true,
+            "number": 32,
+            "review_url": "https://github.com/StevenG3/aegis/pull/32/files",
+            "state": "MERGED",
+            "title": "[codex] Add Polymarket forward execution harness",
+            "url": "https://github.com/StevenG3/aegis/pull/32"
+          },
           {
             "merged": true,
             "number": 31,
@@ -494,8 +570,12 @@
             "date": "2026-06-20"
           },
           {
-            "commits": 1,
+            "commits": 18,
             "date": "2026-06-21"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-22"
           }
         ],
         "weekly": [
@@ -512,8 +592,12 @@
             "week": "2026-W24"
           },
           {
-            "commits": 49,
+            "commits": 66,
             "week": "2026-W25"
+          },
+          {
+            "commits": 1,
+            "week": "2026-W26"
           }
         ]
       },
@@ -746,14 +830,14 @@
     },
     {
       "aggregate": {
-        "active_days": 20,
+        "active_days": 21,
         "ai_marked_commits": 0,
-        "commits": 30,
-        "deletions": 1553,
+        "commits": 31,
+        "deletions": 1597,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 3710,
-        "last_commit_date": "2026-06-20T03:17:09+09:00",
-        "net_lines": 2157,
+        "insertions": 3878,
+        "last_commit_date": "2026-06-21T03:17:09+09:00",
+        "net_lines": 2281,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -762,7 +846,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 816
+          "loc": 940
         },
         {
           "files": 4,
@@ -884,6 +968,10 @@
           {
             "commits": 1,
             "date": "2026-06-20"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-21"
           }
         ],
         "weekly": [
@@ -896,7 +984,7 @@
             "week": "2026-W24"
           },
           {
-            "commits": 6,
+            "commits": 7,
             "week": "2026-W25"
           }
         ]
@@ -906,16 +994,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 26,
-    "ai_marked_commits": 116,
+    "active_days_public_timeline": 27,
+    "ai_marked_commits": 117,
     "codex_prompt_tasks": 65,
-    "net_lines": 162436,
+    "net_lines": 182678,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 327,
-    "total_deletions": 8825,
-    "total_insertions": 171261
+    "total_commits": 346,
+    "total_deletions": 9112,
+    "total_insertions": 191790
   },
   "timeline": {
     "weekly_public": [
@@ -932,8 +1020,12 @@
         "week": "2026-W24"
       },
       {
-        "commits": 55,
+        "commits": 73,
         "week": "2026-W25"
+      },
+      {
+        "commits": 1,
+        "week": "2026-W26"
       }
     ]
   }
