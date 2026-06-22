@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-21T18:17:09.091490+00:00",
+  "generated_at": "2026-06-22T18:17:09.167005+00:00",
   "language_distribution_public": [
     {
-      "files": 161,
+      "files": 167,
       "language": "Python",
-      "loc": 69818
+      "loc": 72126
     },
     {
       "files": 26,
@@ -14,7 +14,7 @@
     {
       "files": 24,
       "language": "JSON",
-      "loc": 1891
+      "loc": 1983
     },
     {
       "files": 16,
@@ -39,7 +39,7 @@
     {
       "files": 5,
       "language": "TOML",
-      "loc": 201
+      "loc": 202
     },
     {
       "files": 9,
@@ -86,18 +86,34 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 16,
-        "ai_marked_commits": 12,
-        "commits": 139,
-        "deletions": 5232,
+        "active_days": 17,
+        "ai_marked_commits": 16,
+        "commits": 145,
+        "deletions": 5240,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 126542,
-        "last_commit_date": "2026-06-21T23:47:32+08:00",
-        "net_lines": 121310,
-        "pr_count": 40,
-        "tracked_files": 215
+        "insertions": 129013,
+        "last_commit_date": "2026-06-23T01:39:11+08:00",
+        "net_lines": 123773,
+        "pr_count": 43,
+        "tracked_files": 221
       },
       "ai_marked_samples": [
+        {
+          "sha": "9bd4e199630c",
+          "subject": "Merge pull request #43 from StevenG3/codex/olympus-71b-weather-model"
+        },
+        {
+          "sha": "6301b9005c4e",
+          "subject": "Add GEFS weather probability evidence"
+        },
+        {
+          "sha": "235051d7eec6",
+          "subject": "Merge pull request #42 from StevenG3/codex/olympus-71-weather-firstpass"
+        },
+        {
+          "sha": "d3338cef2156",
+          "subject": "Add Polymarket weather firstpass gate"
+        },
         {
           "sha": "425f5bb504dc",
           "subject": "Merge pull request #34 from StevenG3/codex/olympus-65-microstructure-impulse-evidence"
@@ -149,9 +165,9 @@
       ],
       "language_distribution": [
         {
-          "files": 161,
+          "files": 167,
           "language": "Python",
-          "loc": 69818
+          "loc": 72126
         },
         {
           "files": 10,
@@ -171,7 +187,7 @@
         {
           "files": 5,
           "language": "TOML",
-          "loc": 201
+          "loc": 202
         },
         {
           "files": 3,
@@ -187,8 +203,32 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 40,
+        "count": 43,
         "items": [
+          {
+            "merged": true,
+            "number": 43,
+            "review_url": "https://github.com/StevenG3/aegis/pull/43/files",
+            "state": "MERGED",
+            "title": "[codex] Add GEFS weather probability evidence",
+            "url": "https://github.com/StevenG3/aegis/pull/43"
+          },
+          {
+            "merged": true,
+            "number": 42,
+            "review_url": "https://github.com/StevenG3/aegis/pull/42/files",
+            "state": "MERGED",
+            "title": "[codex] Add Polymarket weather firstpass gate",
+            "url": "https://github.com/StevenG3/aegis/pull/42"
+          },
+          {
+            "merged": true,
+            "number": 41,
+            "review_url": "https://github.com/StevenG3/aegis/pull/41/files",
+            "state": "MERGED",
+            "title": "[codex] Validate Polymarket BTC 5m settlement source",
+            "url": "https://github.com/StevenG3/aegis/pull/41"
+          },
           {
             "merged": true,
             "number": 40,
@@ -574,8 +614,12 @@
             "date": "2026-06-21"
           },
           {
-            "commits": 1,
+            "commits": 5,
             "date": "2026-06-22"
+          },
+          {
+            "commits": 2,
+            "date": "2026-06-23"
           }
         ],
         "weekly": [
@@ -596,7 +640,7 @@
             "week": "2026-W25"
           },
           {
-            "commits": 1,
+            "commits": 7,
             "week": "2026-W26"
           }
         ]
@@ -830,14 +874,14 @@
     },
     {
       "aggregate": {
-        "active_days": 21,
+        "active_days": 22,
         "ai_marked_commits": 0,
-        "commits": 31,
-        "deletions": 1597,
+        "commits": 32,
+        "deletions": 1632,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 3878,
-        "last_commit_date": "2026-06-21T03:17:09+09:00",
-        "net_lines": 2281,
+        "insertions": 4005,
+        "last_commit_date": "2026-06-22T03:17:09+09:00",
+        "net_lines": 2373,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -846,7 +890,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 940
+          "loc": 1032
         },
         {
           "files": 4,
@@ -972,6 +1016,10 @@
           {
             "commits": 1,
             "date": "2026-06-21"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-22"
           }
         ],
         "weekly": [
@@ -986,6 +1034,10 @@
           {
             "commits": 7,
             "week": "2026-W25"
+          },
+          {
+            "commits": 1,
+            "week": "2026-W26"
           }
         ]
       },
@@ -994,16 +1046,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 27,
-    "ai_marked_commits": 117,
+    "active_days_public_timeline": 28,
+    "ai_marked_commits": 121,
     "codex_prompt_tasks": 65,
-    "net_lines": 182678,
+    "net_lines": 185233,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 346,
-    "total_deletions": 9112,
-    "total_insertions": 191790
+    "total_commits": 353,
+    "total_deletions": 9155,
+    "total_insertions": 194388
   },
   "timeline": {
     "weekly_public": [
@@ -1024,7 +1076,7 @@
         "week": "2026-W25"
       },
       {
-        "commits": 1,
+        "commits": 8,
         "week": "2026-W26"
       }
     ]
