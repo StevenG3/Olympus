@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-22T18:17:09.167005+00:00",
+  "generated_at": "2026-06-23T18:17:09.296149+00:00",
   "language_distribution_public": [
     {
-      "files": 167,
+      "files": 173,
       "language": "Python",
-      "loc": 72126
+      "loc": 74248
     },
     {
       "files": 26,
@@ -14,7 +14,7 @@
     {
       "files": 24,
       "language": "JSON",
-      "loc": 1983
+      "loc": 2035
     },
     {
       "files": 16,
@@ -86,18 +86,42 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 17,
-        "ai_marked_commits": 16,
-        "commits": 145,
-        "deletions": 5240,
+        "active_days": 18,
+        "ai_marked_commits": 22,
+        "commits": 151,
+        "deletions": 5296,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 129013,
-        "last_commit_date": "2026-06-23T01:39:11+08:00",
-        "net_lines": 123773,
-        "pr_count": 43,
-        "tracked_files": 221
+        "insertions": 133047,
+        "last_commit_date": "2026-06-24T00:51:12+08:00",
+        "net_lines": 127751,
+        "pr_count": 46,
+        "tracked_files": 227
       },
       "ai_marked_samples": [
+        {
+          "sha": "ea54961a58de",
+          "subject": "Add domestic futures ADX prefilter (#46)"
+        },
+        {
+          "sha": "d182329573f0",
+          "subject": "Add domestic futures ADX prefilter"
+        },
+        {
+          "sha": "f9f847060239",
+          "subject": "Add domestic options retest data gate (#45)"
+        },
+        {
+          "sha": "7f606a1601ef",
+          "subject": "Add domestic options retest data gate"
+        },
+        {
+          "sha": "52c00dea8039",
+          "subject": "Merge pull request #44 from StevenG3/codex/olympus-71c-weather-twosided"
+        },
+        {
+          "sha": "b10cbbf4654d",
+          "subject": "Add two-sided weather relative value evidence"
+        },
         {
           "sha": "9bd4e199630c",
           "subject": "Merge pull request #43 from StevenG3/codex/olympus-71b-weather-model"
@@ -153,21 +177,13 @@
         {
           "sha": "73ee80befca6",
           "subject": "ci: add GitHub Actions (ruff + pytest) (#2)"
-        },
-        {
-          "sha": "b84a638309a1",
-          "subject": "feat: Phase 23 — IBKR portfolio reconciliation (read-only)"
-        },
-        {
-          "sha": "5602716f0ed1",
-          "subject": "baseline: post-Phase-9 snapshot (codex implementation pre-review)"
         }
       ],
       "language_distribution": [
         {
-          "files": 167,
+          "files": 173,
           "language": "Python",
-          "loc": 72126
+          "loc": 74248
         },
         {
           "files": 10,
@@ -203,8 +219,32 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 43,
+        "count": 46,
         "items": [
+          {
+            "merged": true,
+            "number": 46,
+            "review_url": "https://github.com/StevenG3/aegis/pull/46/files",
+            "state": "MERGED",
+            "title": "[codex] Add domestic futures ADX prefilter",
+            "url": "https://github.com/StevenG3/aegis/pull/46"
+          },
+          {
+            "merged": true,
+            "number": 45,
+            "review_url": "https://github.com/StevenG3/aegis/pull/45/files",
+            "state": "MERGED",
+            "title": "[codex] Add domestic options retest data gate",
+            "url": "https://github.com/StevenG3/aegis/pull/45"
+          },
+          {
+            "merged": true,
+            "number": 44,
+            "review_url": "https://github.com/StevenG3/aegis/pull/44/files",
+            "state": "MERGED",
+            "title": "[codex] Add two-sided weather relative value evidence",
+            "url": "https://github.com/StevenG3/aegis/pull/44"
+          },
           {
             "merged": true,
             "number": 43,
@@ -618,8 +658,12 @@
             "date": "2026-06-22"
           },
           {
-            "commits": 2,
+            "commits": 4,
             "date": "2026-06-23"
+          },
+          {
+            "commits": 4,
+            "date": "2026-06-24"
           }
         ],
         "weekly": [
@@ -640,7 +684,7 @@
             "week": "2026-W25"
           },
           {
-            "commits": 7,
+            "commits": 13,
             "week": "2026-W26"
           }
         ]
@@ -874,14 +918,14 @@
     },
     {
       "aggregate": {
-        "active_days": 22,
+        "active_days": 23,
         "ai_marked_commits": 0,
-        "commits": 32,
-        "deletions": 1632,
+        "commits": 33,
+        "deletions": 1666,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 4005,
-        "last_commit_date": "2026-06-22T03:17:09+09:00",
-        "net_lines": 2373,
+        "insertions": 4091,
+        "last_commit_date": "2026-06-23T03:17:09+09:00",
+        "net_lines": 2425,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -890,7 +934,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 1032
+          "loc": 1084
         },
         {
           "files": 4,
@@ -1020,6 +1064,10 @@
           {
             "commits": 1,
             "date": "2026-06-22"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-23"
           }
         ],
         "weekly": [
@@ -1036,7 +1084,7 @@
             "week": "2026-W25"
           },
           {
-            "commits": 1,
+            "commits": 2,
             "week": "2026-W26"
           }
         ]
@@ -1046,16 +1094,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 28,
-    "ai_marked_commits": 121,
+    "active_days_public_timeline": 29,
+    "ai_marked_commits": 127,
     "codex_prompt_tasks": 65,
-    "net_lines": 185233,
+    "net_lines": 189263,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 353,
-    "total_deletions": 9155,
-    "total_insertions": 194388
+    "total_commits": 360,
+    "total_deletions": 9245,
+    "total_insertions": 198508
   },
   "timeline": {
     "weekly_public": [
@@ -1076,7 +1124,7 @@
         "week": "2026-W25"
       },
       {
-        "commits": 8,
+        "commits": 15,
         "week": "2026-W26"
       }
     ]
