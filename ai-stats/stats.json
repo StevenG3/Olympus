@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-24T18:17:09.806312+00:00",
+  "generated_at": "2026-06-25T18:17:09.790452+00:00",
   "language_distribution_public": [
     {
-      "files": 185,
+      "files": 205,
       "language": "Python",
-      "loc": 78841
+      "loc": 84807
     },
     {
-      "files": 26,
+      "files": 27,
       "language": "Markdown",
-      "loc": 2782
+      "loc": 2863
     },
     {
       "files": 24,
       "language": "JSON",
-      "loc": 2083
+      "loc": 2147
     },
     {
       "files": 16,
@@ -86,109 +86,109 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 19,
-        "ai_marked_commits": 36,
-        "commits": 165,
-        "deletions": 5319,
+        "active_days": 20,
+        "ai_marked_commits": 55,
+        "commits": 185,
+        "deletions": 5454,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 138756,
-        "last_commit_date": "2026-06-25T00:20:32+08:00",
-        "net_lines": 133437,
-        "pr_count": 53,
-        "tracked_files": 239
+        "insertions": 146228,
+        "last_commit_date": "2026-06-25T23:50:58+08:00",
+        "net_lines": 140774,
+        "pr_count": 63,
+        "tracked_files": 260
       },
       "ai_marked_samples": [
         {
+          "sha": "6fed4dd6f183",
+          "subject": "Merge pull request #63 from StevenG3/codex/lean-execution-validation-seam"
+        },
+        {
+          "sha": "af8a850ed749",
+          "subject": "Merge pull request #62 from StevenG3/codex/olympus-85c-spx-vrp-risk-deploy"
+        },
+        {
+          "sha": "2dfa273a2273",
+          "subject": "Add SPX VRP risk deployment curve"
+        },
+        {
+          "sha": "ea05de6e5d0d",
+          "subject": "Merge pull request #61 from StevenG3/codex/olympus-85b-spx-vrp-corrected"
+        },
+        {
+          "sha": "e90ef13acbc7",
+          "subject": "Fix SPX VRP proxy cost scaling"
+        },
+        {
+          "sha": "0d994b8e48ed",
+          "subject": "Add SPX VRP harvest evidence (#60)"
+        },
+        {
+          "sha": "0f3ef3c054ef",
+          "subject": "Add SPX VRP harvest evidence"
+        },
+        {
+          "sha": "d27643737b41",
+          "subject": "Add EDGAR debiased universe IC evidence (#59)"
+        },
+        {
+          "sha": "4653315fada4",
+          "subject": "Add EDGAR debiased universe IC evidence"
+        },
+        {
+          "sha": "5249060cbf62",
+          "subject": "Merge pull request #58 from StevenG3/codex/olympus-82-edgar-panel-build-ic"
+        },
+        {
+          "sha": "e7f50dbe2db0",
+          "subject": "Build EDGAR panel evidence for full-universe IC"
+        },
+        {
+          "sha": "0dafff14e510",
+          "subject": "Merge pull request #57 from StevenG3/codex/olympus-81-edgar-full-universe-ic"
+        },
+        {
+          "sha": "38cdafcc2ff0",
+          "subject": "Add EDGAR full-universe IC evidence gate"
+        },
+        {
+          "sha": "e59c7da9ae42",
+          "subject": "Merge pull request #56 from StevenG3/codex/olympus-80d-vrp-hardcap-voltarget"
+        },
+        {
+          "sha": "5e1d27965a9e",
+          "subject": "Add hardcap voltarget BTC VRP evidence"
+        },
+        {
+          "sha": "e3900423333a",
+          "subject": "Merge pull request #55 from StevenG3/codex/olympus-80c-vrp-condor-timed"
+        },
+        {
+          "sha": "7de8e67a0a83",
+          "subject": "Add timed condor BTC VRP evidence"
+        },
+        {
+          "sha": "750a7482aa1e",
+          "subject": "Merge pull request #54 from StevenG3/codex/olympus-80b-dvol-era-vrp"
+        },
+        {
+          "sha": "dd6c2e40488a",
+          "subject": "Add DVOL-era BTC short vol evidence"
+        },
+        {
           "sha": "3558b9c29b2b",
           "subject": "Merge pull request #53 from StevenG3/codex/olympus-80-btc-vrp-gate"
-        },
-        {
-          "sha": "42b86a93444f",
-          "subject": "Add BTC short-vol VRP data gate"
-        },
-        {
-          "sha": "06677ff37d3b",
-          "subject": "Merge pull request #52 from StevenG3/codex/olympus-79-weather-gefs-precision"
-        },
-        {
-          "sha": "0a15a03cab13",
-          "subject": "Add GEFS weather precision evidence"
-        },
-        {
-          "sha": "1897cf54a12a",
-          "subject": "Merge pull request #51 from StevenG3/codex/olympus-78-weather-precision-gate"
-        },
-        {
-          "sha": "18515e7ee20d",
-          "subject": "Add weather precision feasibility gate"
-        },
-        {
-          "sha": "d126712e969e",
-          "subject": "Merge pull request #50 from StevenG3/codex/olympus-71d-weather-forward-expanded"
-        },
-        {
-          "sha": "545dc997fb88",
-          "subject": "Expand weather evidence and add forward collector"
-        },
-        {
-          "sha": "29f29e9ace18",
-          "subject": "Merge pull request #49 from StevenG3/codex/olympus-76-verdict-adequacy"
-        },
-        {
-          "sha": "f33aa94c8c53",
-          "subject": "Add verdict data adequacy fields"
-        },
-        {
-          "sha": "6453bd09351f",
-          "subject": "Fix CostModel round trip semantics (#48)"
-        },
-        {
-          "sha": "6f3841a51d4f",
-          "subject": "Fix CostModel round trip semantics"
-        },
-        {
-          "sha": "5adab3bde3d0",
-          "subject": "Add MO IM vol gap diagnostic (#47)"
-        },
-        {
-          "sha": "ce9b0b1be802",
-          "subject": "Add MO IM vol gap diagnostic"
-        },
-        {
-          "sha": "ea54961a58de",
-          "subject": "Add domestic futures ADX prefilter (#46)"
-        },
-        {
-          "sha": "d182329573f0",
-          "subject": "Add domestic futures ADX prefilter"
-        },
-        {
-          "sha": "f9f847060239",
-          "subject": "Add domestic options retest data gate (#45)"
-        },
-        {
-          "sha": "7f606a1601ef",
-          "subject": "Add domestic options retest data gate"
-        },
-        {
-          "sha": "52c00dea8039",
-          "subject": "Merge pull request #44 from StevenG3/codex/olympus-71c-weather-twosided"
-        },
-        {
-          "sha": "b10cbbf4654d",
-          "subject": "Add two-sided weather relative value evidence"
         }
       ],
       "language_distribution": [
         {
-          "files": 185,
+          "files": 205,
           "language": "Python",
-          "loc": 78841
+          "loc": 84807
         },
         {
-          "files": 10,
+          "files": 11,
           "language": "Markdown",
-          "loc": 1151
+          "loc": 1232
         },
         {
           "files": 23,
@@ -219,8 +219,88 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 53,
+        "count": 63,
         "items": [
+          {
+            "merged": true,
+            "number": 63,
+            "review_url": "https://github.com/StevenG3/aegis/pull/63/files",
+            "state": "MERGED",
+            "title": "[codex] Add LEAN execution validation seam",
+            "url": "https://github.com/StevenG3/aegis/pull/63"
+          },
+          {
+            "merged": true,
+            "number": 62,
+            "review_url": "https://github.com/StevenG3/aegis/pull/62/files",
+            "state": "MERGED",
+            "title": "[codex] Add SPX VRP risk deployment curve",
+            "url": "https://github.com/StevenG3/aegis/pull/62"
+          },
+          {
+            "merged": true,
+            "number": 61,
+            "review_url": "https://github.com/StevenG3/aegis/pull/61/files",
+            "state": "MERGED",
+            "title": "[codex] Fix SPX VRP proxy cost scaling",
+            "url": "https://github.com/StevenG3/aegis/pull/61"
+          },
+          {
+            "merged": true,
+            "number": 60,
+            "review_url": "https://github.com/StevenG3/aegis/pull/60/files",
+            "state": "MERGED",
+            "title": "[codex] Add SPX VRP harvest evidence",
+            "url": "https://github.com/StevenG3/aegis/pull/60"
+          },
+          {
+            "merged": true,
+            "number": 59,
+            "review_url": "https://github.com/StevenG3/aegis/pull/59/files",
+            "state": "MERGED",
+            "title": "[codex] Add EDGAR debiased universe IC evidence",
+            "url": "https://github.com/StevenG3/aegis/pull/59"
+          },
+          {
+            "merged": true,
+            "number": 58,
+            "review_url": "https://github.com/StevenG3/aegis/pull/58/files",
+            "state": "MERGED",
+            "title": "Build EDGAR panel evidence for full-universe IC",
+            "url": "https://github.com/StevenG3/aegis/pull/58"
+          },
+          {
+            "merged": true,
+            "number": 57,
+            "review_url": "https://github.com/StevenG3/aegis/pull/57/files",
+            "state": "MERGED",
+            "title": "Add EDGAR full-universe IC evidence gate",
+            "url": "https://github.com/StevenG3/aegis/pull/57"
+          },
+          {
+            "merged": true,
+            "number": 56,
+            "review_url": "https://github.com/StevenG3/aegis/pull/56/files",
+            "state": "MERGED",
+            "title": "Add hardcap voltarget BTC VRP evidence",
+            "url": "https://github.com/StevenG3/aegis/pull/56"
+          },
+          {
+            "merged": true,
+            "number": 55,
+            "review_url": "https://github.com/StevenG3/aegis/pull/55/files",
+            "state": "MERGED",
+            "title": "Add timed condor BTC VRP evidence",
+            "url": "https://github.com/StevenG3/aegis/pull/55"
+          },
+          {
+            "merged": true,
+            "number": 54,
+            "review_url": "https://github.com/StevenG3/aegis/pull/54/files",
+            "state": "MERGED",
+            "title": "Add DVOL-era BTC short vol VRP evidence",
+            "url": "https://github.com/StevenG3/aegis/pull/54"
+          },
           {
             "merged": true,
             "number": 53,
@@ -722,8 +802,12 @@
             "date": "2026-06-24"
           },
           {
-            "commits": 3,
+            "commits": 21,
             "date": "2026-06-25"
+          },
+          {
+            "commits": 2,
+            "date": "2026-06-26"
           }
         ],
         "weekly": [
@@ -744,7 +828,7 @@
             "week": "2026-W25"
           },
           {
-            "commits": 27,
+            "commits": 47,
             "week": "2026-W26"
           }
         ]
@@ -978,14 +1062,14 @@
     },
     {
       "aggregate": {
-        "active_days": 24,
+        "active_days": 25,
         "ai_marked_commits": 0,
-        "commits": 34,
-        "deletions": 1707,
+        "commits": 35,
+        "deletions": 1780,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 4180,
-        "last_commit_date": "2026-06-24T03:17:09+09:00",
-        "net_lines": 2473,
+        "insertions": 4317,
+        "last_commit_date": "2026-06-25T03:17:09+09:00",
+        "net_lines": 2537,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -994,7 +1078,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 1132
+          "loc": 1196
         },
         {
           "files": 4,
@@ -1132,6 +1216,10 @@
           {
             "commits": 1,
             "date": "2026-06-24"
+          },
+          {
+            "commits": 1,
+            "date": "2026-06-25"
           }
         ],
         "weekly": [
@@ -1148,7 +1236,7 @@
             "week": "2026-W25"
           },
           {
-            "commits": 3,
+            "commits": 4,
             "week": "2026-W26"
           }
         ]
@@ -1158,16 +1246,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 30,
-    "ai_marked_commits": 141,
+    "active_days_public_timeline": 31,
+    "ai_marked_commits": 160,
     "codex_prompt_tasks": 65,
-    "net_lines": 194997,
+    "net_lines": 202398,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 375,
-    "total_deletions": 9309,
-    "total_insertions": 204306
+    "total_commits": 396,
+    "total_deletions": 9517,
+    "total_insertions": 211915
   },
   "timeline": {
     "weekly_public": [
@@ -1188,7 +1276,7 @@
         "week": "2026-W25"
       },
       {
-        "commits": 30,
+        "commits": 51,
         "week": "2026-W26"
       }
     ]
