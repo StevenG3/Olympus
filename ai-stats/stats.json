@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-03T18:17:10.518469+00:00",
+  "generated_at": "2026-07-04T18:17:09.178273+00:00",
   "language_distribution_public": [
     {
-      "files": 205,
+      "files": 208,
       "language": "Python",
-      "loc": 84807
+      "loc": 85693
     },
     {
       "files": 27,
@@ -14,7 +14,7 @@
     {
       "files": 24,
       "language": "JSON",
-      "loc": 2271
+      "loc": 2275
     },
     {
       "files": 16,
@@ -86,18 +86,34 @@
   "repositories": [
     {
       "aggregate": {
-        "active_days": 20,
-        "ai_marked_commits": 55,
-        "commits": 185,
-        "deletions": 5454,
+        "active_days": 21,
+        "ai_marked_commits": 59,
+        "commits": 189,
+        "deletions": 5462,
         "first_commit_date": "2026-05-27T00:00:19+09:00",
-        "insertions": 146228,
-        "last_commit_date": "2026-06-25T23:50:58+08:00",
-        "net_lines": 140774,
-        "pr_count": 63,
-        "tracked_files": 260
+        "insertions": 147122,
+        "last_commit_date": "2026-07-04T10:37:29+08:00",
+        "net_lines": 141660,
+        "pr_count": 65,
+        "tracked_files": 263
       },
       "ai_marked_samples": [
+        {
+          "sha": "284b0ef1c8dc",
+          "subject": "Merge pull request #65 from StevenG3/codex/olympus-87-edgar-net-costs"
+        },
+        {
+          "sha": "7b9ce75dcd58",
+          "subject": "Add EDGAR factor net cost diagnostics"
+        },
+        {
+          "sha": "84d05398c669",
+          "subject": "Merge pull request #64 from StevenG3/codex/olympus-86-trial-guard"
+        },
+        {
+          "sha": "d6e4e3b62b20",
+          "subject": "Add BH-FDR trial count guard"
+        },
         {
           "sha": "6fed4dd6f183",
           "subject": "Merge pull request #63 from StevenG3/codex/lean-execution-validation-seam"
@@ -161,29 +177,13 @@
         {
           "sha": "e3900423333a",
           "subject": "Merge pull request #55 from StevenG3/codex/olympus-80c-vrp-condor-timed"
-        },
-        {
-          "sha": "7de8e67a0a83",
-          "subject": "Add timed condor BTC VRP evidence"
-        },
-        {
-          "sha": "750a7482aa1e",
-          "subject": "Merge pull request #54 from StevenG3/codex/olympus-80b-dvol-era-vrp"
-        },
-        {
-          "sha": "dd6c2e40488a",
-          "subject": "Add DVOL-era BTC short vol evidence"
-        },
-        {
-          "sha": "3558b9c29b2b",
-          "subject": "Merge pull request #53 from StevenG3/codex/olympus-80-btc-vrp-gate"
         }
       ],
       "language_distribution": [
         {
-          "files": 205,
+          "files": 208,
           "language": "Python",
-          "loc": 84807
+          "loc": 85693
         },
         {
           "files": 11,
@@ -219,8 +219,24 @@
       "name": "StevenG3/aegis",
       "private": false,
       "pull_requests": {
-        "count": 63,
+        "count": 65,
         "items": [
+          {
+            "merged": true,
+            "number": 65,
+            "review_url": "https://github.com/StevenG3/aegis/pull/65/files",
+            "state": "MERGED",
+            "title": "[codex] Add EDGAR factor net cost diagnostics",
+            "url": "https://github.com/StevenG3/aegis/pull/65"
+          },
+          {
+            "merged": true,
+            "number": 64,
+            "review_url": "https://github.com/StevenG3/aegis/pull/64/files",
+            "state": "MERGED",
+            "title": "[codex] Add BH-FDR trial count guard",
+            "url": "https://github.com/StevenG3/aegis/pull/64"
+          },
           {
             "merged": true,
             "number": 63,
@@ -808,6 +824,10 @@
           {
             "commits": 2,
             "date": "2026-06-26"
+          },
+          {
+            "commits": 4,
+            "date": "2026-07-04"
           }
         ],
         "weekly": [
@@ -830,6 +850,10 @@
           {
             "commits": 47,
             "week": "2026-W26"
+          },
+          {
+            "commits": 4,
+            "week": "2026-W27"
           }
         ]
       },
@@ -1062,14 +1086,14 @@
     },
     {
       "aggregate": {
-        "active_days": 33,
+        "active_days": 34,
         "ai_marked_commits": 0,
-        "commits": 43,
-        "deletions": 1966,
+        "commits": 44,
+        "deletions": 1995,
         "first_commit_date": "2026-06-01T23:52:47+09:00",
-        "insertions": 4627,
-        "last_commit_date": "2026-07-03T03:17:10+09:00",
-        "net_lines": 2661,
+        "insertions": 4660,
+        "last_commit_date": "2026-07-04T03:17:10+09:00",
+        "net_lines": 2665,
         "pr_count": 2,
         "tracked_files": 7
       },
@@ -1078,7 +1102,7 @@
         {
           "files": 1,
           "language": "JSON",
-          "loc": 1320
+          "loc": 1324
         },
         {
           "files": 4,
@@ -1252,6 +1276,10 @@
           {
             "commits": 1,
             "date": "2026-07-03"
+          },
+          {
+            "commits": 1,
+            "date": "2026-07-04"
           }
         ],
         "weekly": [
@@ -1272,7 +1300,7 @@
             "week": "2026-W26"
           },
           {
-            "commits": 5,
+            "commits": 6,
             "week": "2026-W27"
           }
         ]
@@ -1282,16 +1310,16 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_days_public_timeline": 38,
-    "ai_marked_commits": 162,
+    "active_days_public_timeline": 39,
+    "ai_marked_commits": 166,
     "codex_prompt_tasks": 65,
-    "net_lines": 203010,
+    "net_lines": 203900,
     "private_repositories": 4,
     "public_repositories": 3,
     "repositories": 7,
-    "total_commits": 406,
-    "total_deletions": 9732,
-    "total_insertions": 212742
+    "total_commits": 411,
+    "total_deletions": 9769,
+    "total_insertions": 213669
   },
   "timeline": {
     "weekly_public": [
@@ -1316,7 +1344,7 @@
         "week": "2026-W26"
       },
       {
-        "commits": 5,
+        "commits": 10,
         "week": "2026-W27"
       }
     ]
